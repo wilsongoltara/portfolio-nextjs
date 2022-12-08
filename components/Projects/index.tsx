@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
     <section id="projects" className="text-gray-400 body-font">
-      <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <div className="container mx-auto flex px-5 py-24 h-full items-center justify-center flex-col">
         <img
           className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
           alt="project"
