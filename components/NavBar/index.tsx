@@ -5,17 +5,15 @@ import {
   Link,
 } from "react-scroll";
 
-
 const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="flex justify-between items-center w-full h-20 px-20 text-white fixed">
-      <div>
+    <header className="flex justify-between items-center w-full h-20 text-white fixed p-10">
+      <div className="pl-5">
         <h1 className="text-4xl ml-2">WG</h1>
       </div>
-
-      <ul className="hidden md:flex ">
+      <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
@@ -48,7 +46,15 @@ const NavBar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-3xl"
             >
-              {link}
+              <Link
+                to={link}
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
