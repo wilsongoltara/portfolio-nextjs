@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="text-gray-400 body-font">
       <div className="container mx-auto flex flex-col items-center justify-center h-5/6 px-4">
         <div className="text-center lg:w-2/3 w-full">
-          <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200 uppercase">
+          <h2 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-200 uppercase">
             Contact
           </h2>
           <p className="mb-8 leading-relaxed">
@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="flex justify-center flex-col text-center">
           {contacts.map(({ typeContact, contact}, index) => (
             <span key={index} className="mb-4">
-              <p className="title-font sm:text-xl text-3xl text-gray-200 font-bold">
+              <p className="title-font text-xl text-gray-200 font-bold">
                 {typeContact}
               </p>
               <p>{contact}</p>

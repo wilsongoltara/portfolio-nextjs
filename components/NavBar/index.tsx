@@ -9,7 +9,7 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="flex justify-between items-center w-full h-20 text-white fixed p-10">
+    <header className="flex justify-between items-center w-full h-20 text-white fixed p-10 max-[380px]:bg-black">
       <div className="pl-5">
         <h1 className="text-4xl ml-2">WG</h1>
       </div>
