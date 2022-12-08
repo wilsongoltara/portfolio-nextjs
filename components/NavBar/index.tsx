@@ -14,13 +14,13 @@ const NavBar = () => {
         <h1 className="text-4xl ml-2">WG</h1>
       </div>
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map(({ link, href }, index) => (
           <li
-            key={id}
+            key={index}
             className="px-10 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105"
           >
             <Link
-              to={link}
+              to={href}
               spy={true}
               smooth={true}
               offset={50}
@@ -41,13 +41,13 @@ const NavBar = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-400">
-          {links.map(({ id, link }) => (
+          {links.map(({ link, href }, index) => (
             <li
-              key={id}
+              key={index}
               className="px-4 cursor-pointer capitalize py-6 text-3xl"
             >
               <Link
-                to={link}
+                to={href}
                 spy={true}
                 smooth={true}
                 offset={50}

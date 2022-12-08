@@ -1,20 +1,20 @@
 export interface Link {
-  id: number,
   link: string,
+  href: string,
 };
 
 const links: Link[] = [
   {
-    id: 1,
     link: 'home',
+    href: '__next'
   },
   {
-    id: 2,
     link: 'projects',
+    href: 'projects',
   },
   {
-    id: 2,
     link: 'contact',
+    href: 'contact',
   }
 ];
 
