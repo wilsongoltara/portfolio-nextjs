@@ -1,4 +1,4 @@
-import Footer from "../Footer";
+import Footer from "./Footer";
 import contacts from "./utils/contacts";
 
 const Contact = () => {

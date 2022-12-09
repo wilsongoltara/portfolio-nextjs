@@ -1,6 +1,4 @@
-import Footer from "../Footer";
-
-const Content = () => {
+const Hero = () => {
   return (
     <section id="home" className="text-gray-400 body-font">
       <div className="mx-auto flex flex-col items-center justify-center h-full px-4">
@@ -16,4 +14,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Hero;
