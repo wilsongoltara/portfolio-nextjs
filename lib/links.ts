@@ -6,15 +6,15 @@ export interface Link {
 const links: Link[] = [
   {
     link: 'home',
-    href: '__next'
+    href: '/'
   },
   {
     link: 'projects',
-    href: 'projects',
+    href: '/projects',
   },
   {
     link: 'contact',
-    href: 'contact',
+    href: '/contact',
   }
 ];
 

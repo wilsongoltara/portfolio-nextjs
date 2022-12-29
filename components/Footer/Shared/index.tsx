@@ -1,5 +1,5 @@
 import Link from "next/link";
-import icons from "./utils/icons";
+import icons from "../../../lib/icons";
 
 const Shared = () => {
   return (

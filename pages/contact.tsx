@@ -1,7 +1,8 @@
-import Footer from "./Footer";
-import contacts from "./utils/contacts";
+import { NextPage } from "next";
+import Footer from "../components/Footer";
+import contacts from "../lib/contacts";
 
-const Contact = () => {
+const Contact: NextPage = () => {
   return (
     <section id="contact" className="text-gray-400 body-font">
       <div className="container mx-auto flex flex-col items-center justify-center h-5/6 px-4">

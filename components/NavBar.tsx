@@ -1,9 +1,7 @@
-import links from "./utils/links";
+import links from "../lib/links";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
-import {
-  Link,
-} from "react-scroll";
+import Link from 'next/link';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -20,11 +18,7 @@ const NavBar = () => {
             className="px-10 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105"
           >
             <Link
-              to={href}
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+              href={href}
             >
               {link}
             </Link>
@@ -47,11 +41,7 @@ const NavBar = () => {
               className="px-4 cursor-pointer capitalize py-6 text-3xl"
             >
               <Link
-                to={href}
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                href={href}
               >
                 {link}
               </Link>
