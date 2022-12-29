@@ -12,8 +12,6 @@ const Home: NextPage = () => {
         <meta property='og:type' content='website'/>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <NavBar />
       <Hero /> 
     </>
   );
