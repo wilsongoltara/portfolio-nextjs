@@ -16,23 +16,23 @@ Antes de iniciar, você precisa ter instalados o [Git](https://git-scm.com) e o 
 ### Executando
 
 ```bash
-# Clone esse projeto
+# Clone project
 $ git clone https://github.com/wilsongoltara/portfolio-nextjs
 
-# Acesse
+# Access
 $ cd portfolio-nextjs
 
-# Instale as dependências
+# Install the dependencies
 $ npm install
 # or
 $ yarn
 
-# Rode o projeto
+# Initialize the server
 $ npm run dev
 # or
 $ yarn dev
 
-# O servidor inicializará em <http://localhost:3000>
+# The server is running on the port: <http://localhost:3000>
 ```
 
 ### Licença
