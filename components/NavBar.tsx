@@ -7,10 +7,12 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="text-gray-100 px-10 py-5">
-      <nav className="flex justify-between items-center w-full h-15">
-        <div className="p-2">
-          <h1 className="text-4xl">WG</h1>
+    <header className="px-10 py-5 background w-full">
+      <nav className="flex justify-between items-center h-15">
+        <div className="p-2 text-gray-400 hover:text-gray-100 hover:scale-105">
+          <Link href='/'>
+            <span className="text-3xl cursor-pointer">WG</span>
+          </Link>
         </div>
         <div>
           <ul className="hidden md:flex">
