@@ -6,7 +6,7 @@ const Shared = () => {
     <article>
       <ul className="flex justify-between items-center">
         {icons.map(({ href, Icon }, index) => (
-          <li key={index} className="cursor-pointer p-10">
+          <li key={index} className="cursor-pointer p-5">
             <Link href={href}>
               <a target="_blank">
                 <Icon color="gray" />

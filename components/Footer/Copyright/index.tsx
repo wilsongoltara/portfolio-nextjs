@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Copyright = () => {
   return (
-    <>
-      <p className="sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">
+    <article className="p-2">
+      <span>
         WG &copy; 2022 by
         <a
           href="https://github.com/goltarawilson"
@@ -13,8 +13,8 @@ const Copyright = () => {
         >
           Wilson S. Goltara
         </a>
-      </p>
-    </>
+      </span>
+    </article>
   );
 };
 
