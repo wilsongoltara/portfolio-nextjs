@@ -1,5 +1,5 @@
-import Copyright from "../Copyright";
-import Shared from "../Shared";
+import Copyright from "./Copyright";
+import Shared from "./Shared";
 
 const Footer = () => {
   return (

@@ -7,6 +7,8 @@ const Projects = () => {
           alt="project"
           src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8f0a6196027649.5ea5451b4f6ae.jpg"
         />
+
+        {/* componentizar */}
         <div className="text-center lg:w-2/3 w-full">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-200 capitalize">
             Trybetunes
@@ -19,8 +21,8 @@ const Projects = () => {
             photo booth af fingerstache pitchfork.
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Button
+            <button className="inline-flex text-white bg-gray-600 border-0 py-2 px-6 focus:outline-none hover:bg-gray-900 rounded text-lg">
+              View Project
             </button>
           </div>
         </div>
