@@ -28,7 +28,6 @@ const Contact: NextPage = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </section>
   );
 };
