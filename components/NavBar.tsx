@@ -7,7 +7,7 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className='px-10 py-5 background w-full'>
+    <header className='px-10 py-5 w-full'>
       <nav className='flex justify-between items-center h-15'>
         <div className='p-2 text-gray-400 hover:text-gray-100 hover:scale-105'>
           <Link href='/'>

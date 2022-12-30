@@ -7,25 +7,22 @@ const Contact: NextPage = () => {
     <>
       <Head>
         <title>Contact me</title>
-        meta
       </Head>
-      <section id='contact' className='text-gray-400 body-font'>
-        <div className='container mx-auto flex flex-col items-center justify-center h-5/6 px-4'>
-          <div className='text-center lg:w-2/3 w-full'>
-            <h2 className='title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-200 uppercase'>
+      <section className='text-gray-400 body-font'>
+        <div className='mx-auto flex flex-col items-center justify-center px-4'>
+          <div className='text-center w-2/3 md:w-full'>
+            <h2 className='title-font text-2xl md:text-3xl mb-4 font-bold text-gray-200 uppercase'>
               Contact
             </h2>
             <p className='mb-8 leading-relaxed'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-              quam dolorum dolore cupiditate! Fugit consequatur cumque possimus
-              fuga magnam, nihil illum perspiciatis repellendus, sequi et sit
-              inventore fugiat ducimus maiores?
+              quam dolorum dolore cupiditate!
             </p>
           </div>
           <div className='flex justify-center flex-col text-center'>
             {contacts.map(({ typeContact, contact }, index) => (
               <span key={index} className='mb-4'>
-                <p className='title-font text-xl text-gray-200 font-bold'>
+                <p className='title-font text-lg md:text-xl text-gray-200 font-bold'>
                   {typeContact}
                 </p>
                 <p>{contact}</p>
