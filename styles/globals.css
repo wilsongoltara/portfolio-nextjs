@@ -7,7 +7,8 @@
 html {
   min-width: 360px;
   font-family: 'Raleway', sans-serif;
-  background: rgb(34,34,34) radial-gradient(circle, rgba(34,34,34,1) 18%, rgba(0,0,0,1) 80%);
+  background: rgb(34, 34, 34)
+    radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
 }
 
 #__next {
