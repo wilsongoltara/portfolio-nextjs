@@ -17,3 +17,11 @@ html {
   justify-content: space-between;
   min-height: 100vh;
 }
+
+section {
+  @apply text-gray-400;
+}
+
+.name-of-developer {
+  @apply text-7xl md:text-9xl text-white text-center mt-0 font-black shadow-gray-900 py-2;
+}
