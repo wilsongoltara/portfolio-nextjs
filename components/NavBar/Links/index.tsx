@@ -1,12 +1,5 @@
 import NextLink from 'next/link';
-import { Link } from '../../../lib/links';
-
-export interface LinksProps {
-  links: Link[];
-  classList: string;
-  classItem: string;
-  onClick?: () => void;
-}
+import { LinksProps } from '../intefaces';
 
 export default function Links({ links, classList, classItem, onClick }: LinksProps) {
   return (
