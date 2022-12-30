@@ -1,6 +1,6 @@
-import { NextPage } from "next";
-import Head from "next/head";
-import contacts from "../lib/contacts";
+import { NextPage } from 'next';
+import Head from 'next/head';
+import contacts from '../lib/contacts';
 
 const Contact: NextPage = () => {
   return (

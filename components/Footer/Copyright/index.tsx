@@ -1,18 +1,17 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const Copyright = () => {
   return (
-    <article className="p-2">
+    <article className='p-2'>
       <span>
         WG &copy; 2022 by
-        <a
-          href="https://github.com/goltarawilson"
-          className="ml-1"
-          rel="noopener noreferrer"
-          target="_blank"
+        <Link
+          href='https://github.com/goltarawilson'
+          rel='noopener noreferrer'
+          target='_blank'
         >
-          Wilson S. Goltara
-        </a>
+          <span className="ml-1">Wilson S. Goltara</span>
+        </Link>
       </span>
     </article>
   );
