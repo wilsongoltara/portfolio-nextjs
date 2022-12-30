@@ -19,7 +19,7 @@ const NavBar = () => {
             {links.map(({ link, href }, index) => (
               <li
                 key={index}
-                className="px-5 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 hover:text-gray-100"
+                className="px-5 cursor-pointer font-medium text-gray-400 hover:scale-105 hover:text-gray-100"
               >
                 <Link
                   href={href}

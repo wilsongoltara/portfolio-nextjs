@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import Footer from "../components/Footer";
 import contacts from "../lib/contacts";
 
 const Contact: NextPage = () => {

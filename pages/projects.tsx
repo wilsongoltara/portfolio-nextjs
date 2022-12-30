@@ -7,7 +7,7 @@ const Projects: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Projects</title>
+        <title>Projects - Build</title>
       </Head>
       <section id="projects" className="text-gray-400 body-font">
         <div className="container mx-auto flex items-center justify-center flex-col">
