@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import { Link } from '../lib/links';
+import { Link } from '../../../lib/links';
 
 export interface LinksProps {
   links: Link[];

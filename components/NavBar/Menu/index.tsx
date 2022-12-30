@@ -1,7 +1,7 @@
 import { Link } from 'lib/links';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Links from './Links';
+import Links from '../Links';
 
 export interface MenuProps {
   links: Link[];
