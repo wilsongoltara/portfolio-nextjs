@@ -6,11 +6,10 @@ const Copyright = () => {
       <span>
         WG &copy; 2022 by
         <Link
-          href='https://github.com/goltarawilson'
+          href='https://github.com/wilsongoltara'
           rel='noopener noreferrer'
-          target='_blank'
         >
-          <span className="ml-1">Wilson S. Goltara</span>
+          <a target='_blank' className="ml-1">Wilson S. Goltara</a>
         </Link>
       </span>
     </article>
