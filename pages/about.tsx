@@ -1,9 +1,9 @@
-import InBuild from "components/InBuild";
-import { NextPage } from "next";
-import Head from "next/head";
+import InBuild from 'components/InBuild';
+import { NextPage } from 'next';
+import Head from 'next/head';
 
 const About: NextPage = () => {
-  return(
+  return (
     <>
       <Head>
         <title>About me - Build</title>
@@ -11,6 +11,6 @@ const About: NextPage = () => {
       <InBuild />
     </>
   );
-}
+};
 
 export default About;
