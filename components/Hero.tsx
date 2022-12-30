@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section id="home" className="text-gray-400 body-font">
-      <div className="mx-auto flex flex-col items-center justify-center h-full px-4">
+      <div className="mx-auto flex flex-col items-center justify-center px-4">
         <div className="uppercase">
           <p className="text-start">i am</p>
           <h2 className="text-7xl md:text-9xl text-white text-center mt-0 font-black shadow-gray-900 py-2">
