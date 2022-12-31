@@ -8,7 +8,7 @@ const Contact: NextPage = () => {
       <Head>
         <title>Contact me</title>
       </Head>
-      <section className='text-gray-400 body-font'>
+      <section>
         <div className='mx-auto flex flex-col items-center justify-center px-4'>
           <div className='text-center w-2/3 md:w-full'>
             <h2 className='title-font text-2xl md:text-3xl mb-4 font-bold text-gray-200 uppercase'>
