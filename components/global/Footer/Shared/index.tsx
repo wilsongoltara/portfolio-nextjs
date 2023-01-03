@@ -3,7 +3,7 @@ import icons from '../../../../lib/icons';
 
 const Shared = () => {
   return (
-    <article>
+    <article className='hidden md:block'>
       <ul className='flex justify-between items-center'>
         {icons.map(({ href, Icon }, index) => (
           <li key={index} className='cursor-pointer p-5'>
