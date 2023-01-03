@@ -1,7 +1,7 @@
 import Image from 'next/image'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import project1 from '../../public/images/project1.jpg';
+import project1 from '../../../assets/project1.jpg';
 
 export default function FeatureCarousel() {
   return (

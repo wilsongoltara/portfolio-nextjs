@@ -1,4 +1,4 @@
-import FeatureCarousel from 'components/Carousel';
+import FeatureCarousel from '../components/global/Carousel';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
