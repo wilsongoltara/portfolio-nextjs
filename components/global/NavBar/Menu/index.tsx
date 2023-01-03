@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { MenuProps } from '../intefaces';
+import { MenuProps } from '../../../../intefaces/intefaces';
 import Links from '../Links';
 
 export default function Menu({ links }: MenuProps) {

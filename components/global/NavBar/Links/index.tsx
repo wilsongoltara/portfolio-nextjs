@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import { LinksProps } from '../intefaces';
+import { LinksProps } from '../../../../intefaces/intefaces';
 
 export default function Links({ links, classList, classItem, onClick }: LinksProps) {
   return (

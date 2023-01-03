@@ -1,15 +1,13 @@
+import { ChildrinProps } from 'intefaces/intefaces';
+import Content from './global/Content';
 import Footer from './global/Footer';
 import NavBar from './global/NavBar';
 
-interface LayoutProps {
-  children: JSX.Element;
-}
-
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children }: ChildrinProps) {
   return (
     <>
       <NavBar />
-      <main>{children}</main>
+      <Content>{children}</Content>
       <Footer />
     </>
   );

@@ -10,3 +10,7 @@ export interface LinksProps {
 export interface MenuProps {
   links: Link[];
 }
+
+export interface ChildrinProps {
+  children: JSX.Element;
+}
