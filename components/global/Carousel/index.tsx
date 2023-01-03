@@ -6,20 +6,22 @@ import project1 from '../../../assets/project1.jpg';
 export default function FeatureCarousel() {
   return (
     <Carousel
-      showThumbs={true}
+      showThumbs={false}
       showIndicators={false}
       showStatus={false}
-      centerMode={true}
+      infiniteLoop={true}
     >
-      <div className='p-2'>
-        <Image src={project1} alt={''} width='240' height='240' />
-        <div className=' md:text-xl text-xs mb-2'>
-          <h1 className='title-font font-bold text-gray-200 capitalize'>
+      <div className='flex flex-col justify-center items-center'>
+        <div className='h-2/4 w-2/4 md:h-2/6 md:w-2/6'>
+          <Image src={project1} alt={''} className='relative'/>
+        </div>
+        <div className='md:text-xl text-base mb-2 bg-transparent'>
+          <h1 className='font-bold text-gray-200 capitalize'>
             Trybetunes
           </h1>
         </div>
         <div>
-          <p className='mb-2 leading-relaxed md:text-base'>
+          <p className='mb-2 leading-relaxed text-sm md:text-base'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
             delectus error recusandae?
           </p>
@@ -30,15 +32,17 @@ export default function FeatureCarousel() {
           </button>
         </div>
       </div>
-      <div className='p-2'>
-        <Image src={project1} alt={''} width='240' height='240' />
-        <div className=' md:text-xl text-xs mb-2'>
-          <h1 className='title-font font-bold text-gray-200 capitalize'>
+      <div className='flex flex-col justify-center items-center '>
+        <div className='h-2/4 w-2/4 md:h-2/6 md:w-2/6'>
+          <Image src={project1} alt={''} />
+        </div>
+        <div className='md:text-xl text-base mb-2'>
+          <h1 className='font-bold text-gray-200 capitalize'>
             Trybetunes
           </h1>
         </div>
         <div>
-          <p className='mb-2 leading-relaxed md:text-base'>
+          <p className='mb-2 leading-relaxed text-sm md:text-base'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
             delectus error recusandae?
           </p>

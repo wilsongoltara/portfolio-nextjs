@@ -22,6 +22,10 @@ section {
   @apply text-gray-400;
 }
 
+.project1 {
+  background-image: url('/assets/project1.jpg');
+}
+
 .name-of-developer {
   @apply text-7xl md:text-9xl text-white text-center mt-0 font-black shadow-gray-900 py-2;
 }

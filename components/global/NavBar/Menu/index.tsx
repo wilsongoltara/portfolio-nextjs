@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { AppContext } from 'components/layout';
+import { useContext } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { MenuProps } from '../../../../intefaces/intefaces';
 import Links from '../Links';
 
 export default function Menu({ links }: MenuProps) {
-  const [nav, setNav] = useState(false);
-
+  const { nav, setNav } = useContext(AppContext);
   return (
     <>
       <div>
