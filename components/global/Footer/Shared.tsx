@@ -1,5 +1,5 @@
 import icons from '@lib/icons';
-import Link from 'next/link';
+import NextLink from 'next/link';
 
 const Shared = () => {
   return (
@@ -7,11 +7,11 @@ const Shared = () => {
       <ul className='flex justify-between items-center'>
         {icons.map(({ href, Icon }, index) => (
           <li key={index} className='cursor-pointer p-5'>
-            <Link href={href}>
+            <NextLink href={href}>
               <a target='_blank'>
                 <Icon color='gray' />
               </a>
-            </Link>
+            </NextLink>
           </li>
         ))}
       </ul>

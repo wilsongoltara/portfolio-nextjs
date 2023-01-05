@@ -6,7 +6,7 @@ import NavBar from './global/NavBar';
 
 export const AppContext = createContext(null);
 
-export default function Layout({ children }: ChildrinProps) {
+const Layout = ({ children }: ChildrinProps) => {
   const [nav, setNav] = useState(false);
 
   return (
@@ -16,4 +16,7 @@ export default function Layout({ children }: ChildrinProps) {
       <Footer />
     </AppContext.Provider>
   );
-}
+};
+
+export default Layout;
+
