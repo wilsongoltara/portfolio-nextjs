@@ -14,3 +14,9 @@ export interface MenuProps {
 export interface ChildrinProps {
   children: JSX.Element;
 }
+
+export interface HeroProps {
+  prefix?: string;
+  name: string;
+  describe: string;
+}
