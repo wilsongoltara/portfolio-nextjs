@@ -1,4 +1,3 @@
-import { Icons } from '@lib/icons';
 import { Link } from '@lib/links';
 
 export interface LinksProps {

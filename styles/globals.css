@@ -22,6 +22,10 @@ html {
   @apply px-8 py-3 w-full text-gray-400;
 }
 
+.section-center {
+  @apply flex flex-col items-center justify-center
+}
+
 .item {
   @apply cursor-pointer hover:text-gray-200 hover:scale-105 px-5;
 }

@@ -2,7 +2,7 @@ import { HeroProps } from '@interfaces/interfaces';
 
 const Hero = ({ prefix, name, describe }: HeroProps) => {
   return (
-    <section className='flex flex-col items-center justify-center'>
+    <section className='section-center'>
       <div className='uppercase'>
         <p className='text-start'>{prefix}</p>
         <h2 className='name-of-developer'>{name}</h2>
