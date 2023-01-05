@@ -1,6 +1,6 @@
+import Hero from '@components/global/Hero';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Hero from '../components/global/Hero';
 
 const Home: NextPage = () => {
   return (

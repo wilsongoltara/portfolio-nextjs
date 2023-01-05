@@ -1,4 +1,4 @@
-import InBuild from 'components/global/InBuild';
+import InBuild from '@components/global/InBuild';
 import { NextPage } from 'next';
 import Head from 'next/head';
 

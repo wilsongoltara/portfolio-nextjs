@@ -1,6 +1,6 @@
+import contacts from '@lib/contacts';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import contacts from '../lib/contacts';
 
 const Contact: NextPage = () => {
   return (
@@ -15,8 +15,7 @@ const Contact: NextPage = () => {
               Contact
             </h2>
             <p className='mb-8 leading-relaxed'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-              quam dolorum dolore cupiditate!
+            Please contact me for a short chat
             </p>
           </div>
           <div className='flex justify-center flex-col text-center'>
