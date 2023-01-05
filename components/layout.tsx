@@ -1,10 +1,10 @@
-import { ChildrinProps } from 'intefaces/intefaces';
+import { ChildrinProps } from '@interfaces/interfaces';
 import { createContext, useState } from 'react';
 import Content from './global/Content';
 import Footer from './global/Footer';
 import NavBar from './global/NavBar';
 
-export const AppContext = createContext(null); 
+export const AppContext = createContext(null);
 
 export default function Layout({ children }: ChildrinProps) {
   const [nav, setNav] = useState(false);

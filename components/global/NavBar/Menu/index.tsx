@@ -1,7 +1,7 @@
-import { AppContext } from 'components/layout';
+import { AppContext } from '@components/layout';
+import { MenuProps } from '@interfaces/interfaces';
 import { useContext } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { MenuProps } from '../../../../intefaces/intefaces';
 import Links from '../Links';
 
 export default function Menu({ links }: MenuProps) {

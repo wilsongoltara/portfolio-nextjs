@@ -1,7 +1,5 @@
-import { ChildrinProps } from 'intefaces/intefaces';
+import { ChildrinProps } from '@interfaces/interfaces';
 
 export default function Content({ children }: ChildrinProps) {
-  return (
-    <main className='px-10 py-5'>{children}</main>
-  );
+  return <main className='px-10 py-5'>{children}</main>;
 }

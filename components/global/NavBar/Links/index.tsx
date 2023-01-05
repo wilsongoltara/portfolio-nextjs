@@ -1,7 +1,12 @@
+import { LinksProps } from '@interfaces/interfaces';
 import NextLink from 'next/link';
-import { LinksProps } from '../../../../intefaces/intefaces';
 
-export default function Links({ links, classList, classItem, onClick }: LinksProps) {
+export default function Links({
+  links,
+  classList,
+  classItem,
+  onClick,
+}: LinksProps) {
   return (
     <ul className={classList}>
       {links.map(({ link, href }, index) => (
