@@ -12,10 +12,8 @@ const Projects: NextPage = () => {
       <Head>
         <title>Projects - Build</title>
       </Head>
-      <section className={nav ? 'hidden' : null}>
-        <div className='mx-auto flex items-center justify-center flex-col'>
-          <FeatureCarousel />
-        </div>
+      <section className={`${nav ? 'hidden' : null}`}>
+        <FeatureCarousel />
       </section>
     </>
   );

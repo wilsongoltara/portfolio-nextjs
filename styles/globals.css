@@ -19,7 +19,7 @@ html {
 }
 
 .size-box {
-  @apply px-8 py-3 w-full text-gray-400;
+  @apply px-8 py-3 w-full text-gray-400 min-w-min;
 }
 
 .section-center {
