@@ -1,16 +1,16 @@
 export interface Link {
-  link: string,
-  href: string,
-};
+  link: string;
+  href: string;
+}
 
 const links: Link[] = [
   {
     link: 'Home',
-    href: '/'
+    href: '/',
   },
   {
     link: 'About me',
-    href: '/about'
+    href: '/about',
   },
   {
     link: 'Projects',
@@ -19,7 +19,7 @@ const links: Link[] = [
   {
     link: 'Contact',
     href: '/contact',
-  }
+  },
 ];
 
 export default links;

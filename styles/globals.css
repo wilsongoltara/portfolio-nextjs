@@ -7,7 +7,8 @@
 html {
   min-width: 360px;
   font-family: 'Raleway', sans-serif;
-  background: rgb(34,34,34) radial-gradient(circle, rgba(34,34,34,1) 18%, rgba(0,0,0,1) 80%);
+  background: rgb(34, 34, 34)
+    radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
 }
 
 #__next {
@@ -15,4 +16,24 @@ html {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+.size-box {
+  @apply px-8 py-3 w-full text-gray-400 min-w-min;
+}
+
+.section-center {
+  @apply flex flex-col items-center justify-center
+}
+
+.item {
+  @apply cursor-pointer hover:text-gray-200 hover:scale-105 px-5;
+}
+
+.burger-menu {
+  @apply flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800;
+}
+
+.name-of-developer {
+  @apply text-7xl md:text-9xl text-white text-center mt-0 font-black shadow-gray-900 py-2;
 }
