@@ -11,7 +11,7 @@ export default function Layout({ children }: ChildrinProps) {
 
   return (
     <AppContext.Provider value={{ nav, setNav }}>
-      <main>
+      <main className='flex flex-col justify-between min-h-screen'>
         <NavBar />
         <Content>{children}</Content>
         <Footer />

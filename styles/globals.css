@@ -5,17 +5,10 @@
 @tailwind utilities;
 
 html {
-  min-width: 360px;
+  min-width: 320px;
   font-family: 'Raleway', sans-serif;
   background: rgb(34, 34, 34)
     radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
 }
 
 .size-box {
