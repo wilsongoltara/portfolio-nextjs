@@ -1,3 +1,4 @@
+import { Icons } from '@lib/icons';
 import { Link } from '@lib/links';
 
 export interface LinksProps {
@@ -19,4 +20,8 @@ export interface HeroProps {
   prefix?: string;
   name: string;
   describe: string;
+}
+
+export interface IconProps {
+  icons: Icons[];
 }

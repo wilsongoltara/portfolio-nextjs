@@ -1,15 +1,14 @@
+import icons from '@lib/icons';
 import Copyright from './Copyright';
 import Shared from './Shared';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className='size-box'>
-      <div className='flex justify-center md:justify-between md:items-center'>
+      <div className='flex justify-center items-center md:justify-between'>
         <Copyright />
-        <Shared />
+        <Shared icons={icons} />
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
