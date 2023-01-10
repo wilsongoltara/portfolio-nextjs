@@ -12,7 +12,7 @@ html {
 }
 
 .size-box {
-  @apply px-8 py-3 w-full text-gray-400 min-w-min;
+  @apply px-5 py-5 w-full text-gray-400 2xl:max-w-[1500px];
 }
 
 .section-center {
@@ -28,5 +28,5 @@ html {
 }
 
 .name-of-developer {
-  @apply text-7xl md:text-9xl text-white text-center mt-0 font-black shadow-gray-900 py-2;
+  @apply text-7xl sm:text-8xl md:text-9xl text-white text-center mt-0 font-black shadow-gray-900 py-2;
 }
