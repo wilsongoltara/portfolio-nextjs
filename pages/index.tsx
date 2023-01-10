@@ -1,15 +1,8 @@
 import Hero from '@components/global/Hero';
-import { HeroProps } from '@interfaces/interfaces';
-import type { NextPage } from 'next';
+import { dataHero } from '@lib/hero';
 import Head from 'next/head';
 
-const dataHero: HeroProps = {
-  prefix: 'i am',
-  name: 'wilson',
-  describe: 'a web developer',
-};
-
-const Home: NextPage = () => {
+export default function Home() {
   const { prefix, name, describe } = dataHero;
 
   return (
@@ -27,6 +20,4 @@ const Home: NextPage = () => {
       <Hero prefix={prefix} name={name} describe={describe} />
     </>
   );
-};
-
-export default Home;
+}
