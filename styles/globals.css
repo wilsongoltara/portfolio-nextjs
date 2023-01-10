@@ -11,7 +11,7 @@ html {
     radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
 }
 
-#__next {
+main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
