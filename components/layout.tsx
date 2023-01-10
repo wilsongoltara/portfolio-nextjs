@@ -1,4 +1,4 @@
-import { ChildrinProps } from '@interfaces/interfaces';
+import { ChildrinProps } from '@interfaces/props';
 import { createContext, useState } from 'react';
 import Content from './global/Content';
 import Footer from './global/Footer';

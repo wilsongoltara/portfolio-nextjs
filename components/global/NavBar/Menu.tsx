@@ -1,36 +1,31 @@
 import { AppContext } from '@components/layout';
-import { MenuProps } from '@interfaces/interfaces';
+import { MenuProps } from '@interfaces/props';
 import { useContext } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Links from './Links';
 
-const Menu = ({ links }: MenuProps) => {
+export default function Menu({ links }: MenuProps) {
   const { nav, setNav } = useContext(AppContext);
+  
   return (
-    <nav>
+    <menu>
       <div>
-        <Links
-          links={links}
-          classList='hidden md:flex'
-          classItem='item'
-        />
+        <Links links={links} classList='hidden md:flex' classItem='item' />
       </div>
       <div
         onClick={() => setNav(!nav)}
-        className='cursor-pointer pr-5 z-10 md:hidden'
+        className='cursor-pointer pr-2 md:hidden'
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
       {nav && (
         <Links
           links={links}
           classList='burger-menu'
-          classItem='item capitalize py-6 text-3xl'
+          classItem='item py-5 text-3xl'
           onClick={() => setNav(!nav)}
         />
       )}
-    </nav>
+    </menu>
   );
-};
-
-export default Menu;
+}
