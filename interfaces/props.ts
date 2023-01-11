@@ -1,3 +1,4 @@
+import { Contact } from '@lib/contacts';
 import { Icons } from '@lib/icons';
 import { Link } from '@lib/links';
 
@@ -24,4 +25,8 @@ export interface HeroProps {
 
 export interface IconProps {
   icons: Icons[];
+}
+
+export interface ContactsProps {
+  contacts: Contact[];
 }

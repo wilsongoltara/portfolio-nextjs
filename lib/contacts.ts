@@ -14,7 +14,7 @@ const contacts: Contact[] = [
   },
   {
     typeContact: 'E-mail',
-    contact: 'wilson.goltara@gmail.com',
+    contact: 'wilson.goltara15@gmail.com',
   },
 ];
 
