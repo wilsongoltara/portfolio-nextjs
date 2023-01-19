@@ -11,6 +11,11 @@ html {
     radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
 }
 
+.button-bg {
+  background-color: #222222;
+  box-shadow: 8px 8px 44px 5px rgba(0,0,0,0.3);
+}
+
 .size-box {
   @apply px-5 py-5 w-full text-gray-400 2xl:max-w-[1600px];
 }

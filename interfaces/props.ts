@@ -1,6 +1,7 @@
 import { Contact } from '@lib/contacts';
 import { Icons } from '@lib/icons';
 import { Link } from '@lib/links';
+import { StaticImageData } from 'next/image';
 
 export interface LinksProps {
   links: Link[];
@@ -29,4 +30,15 @@ export interface IconProps {
 
 export interface ContactsProps {
   contacts: Contact[];
+}
+
+export interface CardProps {
+  pathProject: StaticImageData;
+  nameProject: string;
+  description: string;
+  link: string;
+}
+
+export interface ButtonProps {
+  linkProject: string;
 }

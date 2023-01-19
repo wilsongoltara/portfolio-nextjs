@@ -1,20 +1,28 @@
+import { projects } from '@lib/projects';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Card from './Card';
 
-export default function FeatureCarousel() {
+export default function ProjectsCarousel() {
   return (
     <Carousel
-      showIndicators={false}
-      showArrows
-      showStatus={false}
+      className='w-[90%] max-w-2xl min-w-[320px]'
       emulateTouch
       infiniteLoop
-      className='w-5/6 max-w-2xl'
+      showArrows
+      showIndicators
+      showStatus={false}
+      showThumbs={false}
     >
-      <Card />
-      <Card />
-      <Card />
+      {projects.map(({ description, link, nameProject, pathProject }, index) => (
+        <Card
+          key={index}
+          description={description}
+          link={link}
+          nameProject={nameProject}
+          pathProject={pathProject}
+        />
+      ))}
     </Carousel>
   );
 }
