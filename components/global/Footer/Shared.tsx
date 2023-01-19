@@ -1,7 +1,7 @@
-import icons from '@lib/icons';
+import { IconProps } from '@interfaces/props';
 import NextLink from 'next/link';
 
-const Shared = () => {
+export default function Shared({ icons }: IconProps) {
   return (
     <article className='hidden md:block'>
       <ul className='flex justify-between items-center'>
@@ -17,6 +17,4 @@ const Shared = () => {
       </ul>
     </article>
   );
-};
-
-export default Shared;
+}

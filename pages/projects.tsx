@@ -1,4 +1,4 @@
-import FeatureCarousel from '@components/global/Carousel';
+import ProjectsCarousel from '@components/global/Carousel';
 import { AppContext } from '@components/layout';
 import { NextPage } from 'next';
 import Head from 'next/head';
@@ -10,10 +10,11 @@ const Projects: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Projects - Build</title>
+        <title>Projects</title>
+        <meta name="description" content="Projects developement" />
       </Head>
-      <section className={`${nav ? 'hidden' : null}`}>
-        <FeatureCarousel />
+      <section className={`${nav ? 'hidden' : null} flex flex-col items-center`}>
+        <ProjectsCarousel />
       </section>
     </>
   );

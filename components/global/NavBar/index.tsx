@@ -2,13 +2,13 @@ import links from '@lib/links';
 import Icon from './Icon';
 import Menu from './Menu';
 
-const NavBar = () => {
+export default function NavBar() {
   return (
-    <header className='size-box flex justify-between items-center h-15'>
-      <Icon />
-      <Menu links={links} />
+    <header className='size-box'>
+      <nav className='flex justify-between items-center'>
+        <Icon />
+        <Menu links={links} />
+      </nav>
     </header>
   );
-};
-
-export default NavBar;
+}

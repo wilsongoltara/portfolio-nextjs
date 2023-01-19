@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Icon = () => {
+export default function Icon() {
   return (
     <div className='p-2 hover:text-gray-200 hover:scale-105'>
       <Link href='/'>
@@ -9,5 +9,3 @@ const Icon = () => {
     </div>
   );
 };
-
-export default Icon;

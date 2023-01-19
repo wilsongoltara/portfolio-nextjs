@@ -1,8 +1,8 @@
-import { HeroProps } from '@interfaces/interfaces';
+import { HeroProps } from '@interfaces/props';
 
-const Hero = ({ prefix, name, describe }: HeroProps) => {
+export default function Hero({ prefix, name, describe }: HeroProps) {
   return (
-    <section className='section-center'>
+    <section className='flex flex-col items-center justify-center'>
       <div className='uppercase'>
         <p className='text-start'>{prefix}</p>
         <h2 className='name-of-developer'>{name}</h2>
@@ -11,5 +11,3 @@ const Hero = ({ prefix, name, describe }: HeroProps) => {
     </section>
   );
 };
-
-export default Hero;
