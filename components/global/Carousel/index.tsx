@@ -2,17 +2,23 @@ import { projects } from '@lib/projects';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Card from './Card';
+import React from 'react';
 
 export default function ProjectsCarousel() {
+  const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
+
   return (
     <Carousel
-      className='w-[90%] max-w-2xl min-w-[320px]'
+      className='w-[90%] max-w-3xl min-w-[320px]'
       emulateTouch
-      infiniteLoop
+      centerMode
+      selectedItem={1}
       showArrows
-      showIndicators
+      showIndicators={false}
       showStatus={false}
       showThumbs={false}
+      renderItem={customRenderItem}
+      
     >
       {projects.map(({ description, link, nameProject, pathProject }, index) => (
         <Card

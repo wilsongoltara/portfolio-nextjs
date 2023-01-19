@@ -37,6 +37,7 @@ export interface CardProps {
   nameProject: string;
   description: string;
   link: string;
+  isSelected?: boolean;
 }
 
 export interface ButtonProps {

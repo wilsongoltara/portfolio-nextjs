@@ -7,6 +7,7 @@ const About: NextPage = () => {
     <>
       <Head>
         <title>About me - Build</title>
+        <meta name="description" content="About me" />
       </Head>
       <InBuild />
     </>
