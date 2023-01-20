@@ -1,9 +1,8 @@
 import ContentContact from '@components/global/ContentContact';
 import contacts from '@lib/contacts';
-import { NextPage } from 'next';
 import Head from 'next/head';
 
-const Contact: NextPage = () => {
+export default function Contact() {
   return (
     <>
       <Head>
@@ -27,6 +26,4 @@ const Contact: NextPage = () => {
       </section>
     </>
   );
-};
-
-export default Contact;
+}

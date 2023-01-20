@@ -5,9 +5,11 @@
 
 # wilson-goltara.vercel.app
 
-- **Framework**: [Next.js](https://nextjs.org/) with [TypeScript](https://www.typescriptlang.org/)
-- **Deployment**: [Vercel](https://vercel.com)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+## Tech
+
+- **Framework**: [Next.js](https://nextjs.org/) with [TypeScript](https://www.typescriptlang.org/).
+- **Deployment**: [Vercel](https://vercel.com).
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting Started
 
@@ -39,7 +41,7 @@ $ yarn dev
 
 Este projeto está sob licença do MIT. Para mais detalhes, leia o arquivo de licença [LICENSE](LICENSE.md).
 
-Criado e desenvolvido por <a href="https://github.com/wilsongoltara" target="_blank">Wilson Goltara</a>
+Criado e desenvolvido por <a href="https://github.com/wilsongoltara" target="_blank">Wilson Goltara</a>.
 
 &#xa0;
 
