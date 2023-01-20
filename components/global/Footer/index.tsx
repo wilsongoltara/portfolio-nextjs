@@ -1,6 +1,6 @@
 import icons from '@lib/icons';
 import Copyright from './Copyright';
-import Shared from './Shared';
+import Shared from '../Shared';
 
 export default function Footer() {
   return (

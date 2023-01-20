@@ -5,7 +5,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        me: 'url(\'/assets/me.jpg\')',
+      },
+    },
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
 };

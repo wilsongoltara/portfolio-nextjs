@@ -1,17 +1,16 @@
-import InBuild from '@components/global/InBuild';
-import { NextPage } from 'next';
+import ContentAboutMe from '@components/global/ContentAboutMe';
 import Head from 'next/head';
 
-const About: NextPage = () => {
+export default function About() {
   return (
     <>
       <Head>
         <title>About me - Build</title>
-        <meta name="description" content="About me" />
+        <meta name="description" content="About me" key="desc" />
       </Head>
-      <InBuild />
+      <section className='flex justify-center'>
+        <ContentAboutMe />
+      </section>
     </>
   );
-};
-
-export default About;
+}
