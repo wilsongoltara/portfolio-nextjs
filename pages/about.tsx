@@ -1,16 +1,22 @@
-import InBuild from '@components/global/InBuild';
-import { NextPage } from 'next';
+import me from '@assets/me.jpg';
+import ContentAboutMe from '@components/global/ContentAboutMe';
+import { AppContext } from '@components/layout';
+import stacks from '@lib/stacks';
 import Head from 'next/head';
+import { useContext } from 'react';
 
-const About: NextPage = () => {
+export default function About() {
+  const { nav } = useContext(AppContext);
+
   return (
     <>
       <Head>
-        <title>About me - Build</title>
+        <title>About me</title>
+        <meta name='description' content='About me' key='desc' />
       </Head>
-      <InBuild />
+      <section className={`flex justify-center ${nav ? 'hidden': null}`}>
+        <ContentAboutMe hrefImage={me} stacks={stacks} />
+      </section>
     </>
   );
-};
-
-export default About;
+}

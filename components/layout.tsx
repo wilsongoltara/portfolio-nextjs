@@ -1,22 +1,24 @@
-import { ChildrinProps } from '@interfaces/interfaces';
-import { createContext, useState } from 'react';
-import Content from './global/Content';
+import { ChildrinProps } from '@interfaces/props';
+import { createContext, useState, lazy, Suspense } from 'react';
 import Footer from './global/Footer';
 import NavBar from './global/NavBar';
 
+const Content = lazy(() => import('./global/Content'));
+
 export const AppContext = createContext(null);
 
-const Layout = ({ children }: ChildrinProps) => {
+export default function Layout({ children }: ChildrinProps) {
   const [nav, setNav] = useState(false);
 
   return (
-    <AppContext.Provider value={{ nav, setNav }}>
-      <NavBar />
-      <Content>{children}</Content>
-      <Footer />
-    </AppContext.Provider>
+    <main className='flex flex-col justify-between items-center min-h-screen'>
+      <AppContext.Provider value={{ nav, setNav }}>
+        <NavBar />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Content>{children}</Content>
+        </Suspense>
+        <Footer />
+      </AppContext.Provider>
+    </main>
   );
 };
-
-export default Layout;
-

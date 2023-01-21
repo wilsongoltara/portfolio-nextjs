@@ -1,39 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  min-width: 360px;
-  font-family: 'Raleway', sans-serif;
-  background: rgb(34, 34, 34)
-    radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
-}
 
-#__next {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
+@layer components {
+  html {
+    min-width: 320px;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(34, 34, 34)
+      radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
+  }
+  
+  .button-bg {
+    background-color: #222222;
+    box-shadow: 8px 8px 44px 5px rgba(0,0,0,0.3);
+  }
+  
+  .size-box {
+    @apply px-5 py-5 w-full text-gray-400 2xl:max-w-[1600px];
+  }
 
-.size-box {
-  @apply px-8 py-3 w-full text-gray-400 min-w-min;
-}
+  .item {
+    @apply cursor-pointer hover:text-gray-200 hover:scale-105 px-5;
+  }
 
-.section-center {
-  @apply flex flex-col items-center justify-center
-}
+  .burger-menu {
+    @apply flex flex-col justify-center items-center absolute md:hidden right-0 w-3/5 h-1/2 bg-gradient-to-b from-gray-900 to-black text-gray-100;
+  }
 
-.item {
-  @apply cursor-pointer hover:text-gray-200 hover:scale-105 px-5;
-}
-
-.burger-menu {
-  @apply flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800;
-}
-
-.name-of-developer {
-  @apply text-7xl md:text-9xl text-white text-center mt-0 font-black shadow-gray-900 py-2;
+  .name-of-developer {
+    @apply text-7xl sm:text-8xl md:text-9xl text-white text-center mt-0 font-black shadow-gray-900 py-2;
+  }
 }
