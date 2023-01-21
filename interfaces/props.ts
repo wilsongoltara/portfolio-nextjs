@@ -1,7 +1,7 @@
 import { Contact } from '@lib/contacts';
-import { Icons } from '@lib/icons';
 import { Link } from '@lib/links';
 import { StaticImageData } from 'next/image';
+import { IconType } from 'react-icons';
 
 export interface LinksProps {
   links: Link[];
@@ -24,8 +24,15 @@ export interface HeroProps {
   describe: string;
 }
 
+export type Icons = {
+  name: string;
+  href: string;
+  Icon: IconType;
+};
+
 export interface IconProps {
   icons: Icons[];
+  classList: string;
 }
 
 export interface ContactsProps {

@@ -1,7 +1,7 @@
 import me from '@assets/me.jpg';
-import icons from '@lib/icons';
 import Image from 'next/image';
-import Shared from './Shared';
+import Icons from './Icons';
+import stacks from '@lib/stacks';
 
 export default function ContentAboutMe() {
   return (
@@ -18,9 +18,9 @@ export default function ContentAboutMe() {
             iste nemo qui est dicta iusto fugit animi,
           </p>
         </div>
-        <div className='hidden md:block'>
+        <div>
           <h2 className='text-xl text-gray-200 font-bold'>Techs</h2>
-          <Shared icons={icons} />
+          <Icons icons={stacks} classList='flex' />
         </div>
       </div>
     </div>

@@ -1,21 +1,19 @@
-import { IconType } from 'react-icons';
 import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si';
-
-export type Icons = {
-  href: string;
-  Icon: IconType;
-};
+import { Icons } from '@interfaces/props';
 
 const icons: Icons[] = [
   {
+    name: 'GitHub',
     href: 'https://github.com/wilsongoltara',
     Icon: SiGithub,
   },
   {
+    name: 'Gmail',
     href: 'https://github.com/wilsongoltara',
     Icon: SiGmail,
   },
   {
+    name: 'Linkedin',
     href: 'https://linkedin.com/in/wilsongoltara',
     Icon: SiLinkedin,
   },
