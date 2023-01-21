@@ -11,14 +11,14 @@ export default function Layout({ children }: ChildrinProps) {
   const [nav, setNav] = useState(false);
 
   return (
-    <AppContext.Provider value={{ nav, setNav }}>
-      <main className='flex flex-col justify-between items-center min-h-screen'>
+    <main className='flex flex-col justify-between items-center min-h-screen'>
+      <AppContext.Provider value={{ nav, setNav }}>
         <NavBar />
         <Suspense fallback={<div>Loading...</div>}>
           <Content>{children}</Content>
         </Suspense>
         <Footer />
-      </main>
-    </AppContext.Provider>
+      </AppContext.Provider>
+    </main>
   );
 };
