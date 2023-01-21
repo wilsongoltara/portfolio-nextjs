@@ -50,3 +50,8 @@ export interface CardProps {
 export interface ButtonProps {
   linkProject: string;
 }
+
+export interface ContentAboutMeProps {
+  stacks: Icons[];
+  hrefImage: StaticImageData;
+}

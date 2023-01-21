@@ -1,13 +1,12 @@
-import me from '@assets/me.jpg';
+import { ContentAboutMeProps } from '@interfaces/props';
 import Image from 'next/image';
 import Icons from './Icons';
-import stacks from '@lib/stacks';
 
-export default function ContentAboutMe() {
+export default function ContentAboutMe({ hrefImage, stacks}: ContentAboutMeProps) {
   return (
     <div className="flex flex-col sm:flex-row justify-between items-center w-4/6 max-w-3xl">
       <div className="mr-5">
-        <Image src={me} alt='me' className="rounded-md" height={400} width={400}/>
+        <Image src={hrefImage} alt='me' className="rounded-md" height={400} width={400}/>
       </div>
       <div className='flex flex-col text-justify'>
         <div className='mb-3'>
