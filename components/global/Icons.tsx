@@ -6,7 +6,7 @@ export default function Icons({ icons, classList }: IconProps) {
     <article className=''>
       <ul className={classList}>
         {icons.map(({ name, href, Icon }, index) => (
-          <li key={index} className='cursor-pointer p-3' about='auto'>
+          <li key={index} className='cursor-pointer p-3'>
             <NextLink href={href}>
               <a target='_blank'>
                 <Icon color='gray-400' title={name}/>
