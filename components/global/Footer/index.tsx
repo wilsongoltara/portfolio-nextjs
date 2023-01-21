@@ -1,13 +1,13 @@
 import icons from '@lib/icons';
 import Copyright from './Copyright';
-import Shared from './Shared';
+import Icons from '../Icons';
 
 export default function Footer() {
   return (
     <footer className='size-box'>
-      <div className='flex justify-center items-center md:justify-between'>
+      <div className='flex flex-col justify-center items-center md:flex-row md:justify-between'>
         <Copyright />
-        <Shared icons={icons} />
+        <Icons icons={icons} classList='flex justify-between items-center' />
       </div>
     </footer>
   );

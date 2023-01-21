@@ -1,10 +1,9 @@
 import ProjectsCarousel from '@components/global/Carousel';
 import { AppContext } from '@components/layout';
-import { NextPage } from 'next';
 import Head from 'next/head';
 import { useContext } from 'react';
 
-const Projects: NextPage = () => {
+export default function Projects(){
   const { nav } = useContext(AppContext);
 
   return (
@@ -18,6 +17,4 @@ const Projects: NextPage = () => {
       </section>
     </>
   );
-};
-
-export default Projects;
+}
