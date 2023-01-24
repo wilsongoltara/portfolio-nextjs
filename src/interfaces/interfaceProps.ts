@@ -26,6 +26,7 @@ export interface CardProps {
 export interface ContentAboutMeProps {
   stacks: Icon[];
   hrefImage: StaticImageData;
+  describe: string;
 }
 
 export interface CopyrightProps {
