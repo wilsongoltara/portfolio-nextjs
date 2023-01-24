@@ -1,5 +1,5 @@
 import {LinksProps} from '@interfaces/interfaceProps';
-import NextLink from 'next/link';
+import Link from '@components/Link';
 
 export default function Links({
   links,
@@ -11,7 +11,7 @@ export default function Links({
     <ul className={classList}>
       {links.map(({ link, href }, index) => (
         <li key={index} className={classItem} onClick={onClick}>
-          <NextLink href={href}>{link}</NextLink>
+          <Link href={href}>{link}</Link>
         </li>
       ))}
     </ul>

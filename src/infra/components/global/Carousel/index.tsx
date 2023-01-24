@@ -1,5 +1,5 @@
-import { projects } from '../../../../lib/projects';
-import { Carousel } from 'react-responsive-carousel';
+import {projects} from '@lib/projects';
+import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Card from './Card';
 
@@ -17,7 +17,6 @@ export default function ProjectsCarousel() {
       showStatus={false}
       showThumbs={false}
       renderItem={customRenderItem}
-      
     >
       {projects.map(({ description, link, nameProject, pathProject }, index) => (
         <Card

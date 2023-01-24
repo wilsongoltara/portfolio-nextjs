@@ -1,18 +1,16 @@
-import NextLink from 'next/link';
+import Link from '@components/Link';
 
 export default function Copyright() {
   return (
     <article>
       <span className='p-2'>
         WG &copy; 2022 by
-        <NextLink
+        <Link
           href='https://github.com/wilsongoltara'
-          rel='noopener noreferrer'
+          className='ml-1'
         >
-          <a target='_blank' className='ml-1'>
-            Wilson S. Goltara
-          </a>
-        </NextLink>
+          Wilson S. Goltara
+        </Link>
       </span>
     </article>
   );

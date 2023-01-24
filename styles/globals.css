@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 
-@layer components {
+@layer base {
   html {
     min-width: 320px;
     font-family: 'Raleway', sans-serif;
