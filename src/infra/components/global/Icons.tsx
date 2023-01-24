@@ -1,4 +1,4 @@
-import { IconProps } from '@interfaces/props';
+import {IconProps} from '@interfaces/childrenProps';
 import NextLink from 'next/link';
 
 export default function Icons({ icons, classList }: IconProps) {

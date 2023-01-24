@@ -1,5 +1,5 @@
-import { ChildrinProps } from '@interfaces/props';
+import {ChildrenProps} from '@interfaces/childrenProps';
 
-export default function Content({ children }: ChildrinProps) {
-  return <div className='size-box'>{children}</div>;
+export default function Content({children}: ChildrenProps) {
+  return <div className="size-box">{children}</div>;
 }

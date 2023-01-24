@@ -1,4 +1,4 @@
-import { HeroProps } from '@interfaces/props';
+import {HeroProps} from '@interfaces/childrenProps';
 
 export default function Hero({ prefix, name, describe }: HeroProps) {
   return (

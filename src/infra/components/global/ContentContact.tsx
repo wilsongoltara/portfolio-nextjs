@@ -1,4 +1,4 @@
-import { ContactsProps } from '@interfaces/props';
+import {ContactsProps} from '@interfaces/childrenProps';
 
 export default function ContentContact({ contacts }: ContactsProps) {
   return (

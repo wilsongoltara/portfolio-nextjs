@@ -1,5 +1,14 @@
-import { SiNextdotjs, SiTypescript, SiNodedotjs, SiReact, SiTailwindcss, SiJest, SiMongodb, SiMysql } from 'react-icons/si';
-import { Icons } from '@interfaces/props';
+import {
+  SiJest,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript
+} from 'react-icons/si';
+import {Icons} from '@interfaces/childrenProps';
 
 const stacks: Icons[] = [
   {

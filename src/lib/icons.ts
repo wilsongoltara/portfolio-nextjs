@@ -1,5 +1,5 @@
-import { SiGithub, SiGmail, SiLinkedin } from 'react-icons/si';
-import { Icons } from '@interfaces/props';
+import {SiGithub, SiGmail, SiLinkedin} from 'react-icons/si';
+import {Icons} from '@interfaces/childrenProps';
 
 const icons: Icons[] = [
   {

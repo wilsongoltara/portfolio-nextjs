@@ -1,4 +1,4 @@
-import { ButtonProps } from '@interfaces/props';
+import {ButtonProps} from '@interfaces/childrenProps';
 import Link from 'next/link';
 
 export default function Button({ linkProject }: ButtonProps) {

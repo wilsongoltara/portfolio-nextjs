@@ -1,4 +1,4 @@
-import { HeroProps } from '@interfaces/props';
+import {HeroProps} from '@interfaces/childrenProps';
 
 export const dataHero: HeroProps = {
   prefix: 'i am',

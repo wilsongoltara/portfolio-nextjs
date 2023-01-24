@@ -1,7 +1,11 @@
-import { Contact } from '../lib/contacts';
-import { Link } from '../lib/links';
-import { StaticImageData } from 'next/image';
-import { IconType } from 'react-icons';
+import {Contact} from '@lib/contacts';
+import {Link} from '@lib/links';
+import {StaticImageData} from 'next/image';
+import {IconType} from 'react-icons';
+
+export interface HeadProps {
+  title: string;
+}
 
 export interface LinksProps {
   links: Link[];
@@ -14,7 +18,7 @@ export interface MenuProps {
   links: Link[];
 }
 
-export interface ChildrinProps {
+export interface ChildrenProps {
   children: JSX.Element;
 }
 

@@ -1,23 +1,25 @@
-import { ChildrinProps } from '@interfaces/props';
-import { createContext, useState, lazy, Suspense } from 'react';
+import {ChildrenProps} from '@interfaces/childrenProps';
+import {createContext, lazy, Suspense, useState} from 'react';
 import Footer from './global/Footer';
 import NavBar from './global/NavBar';
+import Head from '@components/Head';
 
 const Content = lazy(() => import('./global/Content'));
 
 export const AppContext = createContext(null);
 
-export default function Layout({ children }: ChildrinProps) {
+export default function Layout({children}: ChildrenProps) {
   const [nav, setNav] = useState(false);
 
   return (
-    <main className='flex flex-col justify-between items-center min-h-screen'>
-      <AppContext.Provider value={{ nav, setNav }}>
-        <NavBar />
+    <main className="flex flex-col justify-between items-center min-h-screen">
+      <Head title="Wilson Goltara"/>
+      <AppContext.Provider value={{nav, setNav}}>
+        <NavBar/>
         <Suspense fallback={<div>Loading...</div>}>
           <Content>{children}</Content>
         </Suspense>
-        <Footer />
+        <Footer/>
       </AppContext.Provider>
     </main>
   );
