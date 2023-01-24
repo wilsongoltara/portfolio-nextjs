@@ -2,7 +2,7 @@ import {AppContext} from '@infra/components/Layout';
 import {MenuProps} from '@interfaces/interfaceProps';
 import {useContext} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
-import Links from './Links';
+import Links from '@components/Links';
 
 export default function Menu({ links }: MenuProps) {
   const { nav, setNav } = useContext(AppContext);

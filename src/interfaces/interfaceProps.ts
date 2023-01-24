@@ -1,11 +1,24 @@
 import {Contact} from '@lib/contacts';
-import {Link} from '@lib/links';
 import {StaticImageData} from 'next/image';
 import {IconType} from 'react-icons';
 import {ReactNode} from 'react';
 
+export interface ButtonProps {
+  linkProject: string;
+}
+
+export interface ChildrenProps {
+  children: JSX.Element;
+}
+
 export interface HeadProps {
   title: string;
+}
+
+export interface LinkNavBar {
+  id: number;
+  link: string;
+  href: string;
 }
 
 export interface LinkProps {
@@ -16,18 +29,14 @@ export interface LinkProps {
 }
 
 export interface LinksProps {
-  links: Link[];
+  links: LinkNavBar[];
   classList?: string;
   classItem?: string;
   onClick?: () => void;
 }
 
 export interface MenuProps {
-  links: Link[];
-}
-
-export interface InterfaceProps {
-  children: JSX.Element;
+  links: LinkNavBar[];
 }
 
 export interface HeroProps {
@@ -36,15 +45,20 @@ export interface HeroProps {
   describe: string;
 }
 
-export type Icons = {
+export interface Icons {
   name: string;
   href: string;
   Icon: IconType;
-};
+}
 
-export interface IconProps {
+export interface IconsProps {
   icons: Icons[];
   classList: string;
+}
+
+export interface IconProps {
+  nameIcon: string;
+  href: string;
 }
 
 export interface ContactsProps {
@@ -57,10 +71,6 @@ export interface CardProps {
   description: string;
   link: string;
   isSelected?: boolean;
-}
-
-export interface ButtonProps {
-  linkProject: string;
 }
 
 export interface ContentAboutMeProps {

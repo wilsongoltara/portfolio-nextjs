@@ -1,7 +1,7 @@
-import {IconProps} from '@interfaces/interfaceProps';
+import {IconsProps} from '@interfaces/interfaceProps';
 import Link from '@components/Link';
 
-export default function Icons({ icons, classList }: IconProps) {
+export default function Icons({ icons, classList }: IconsProps) {
   return (
     <article>
       <ul className={classList}>

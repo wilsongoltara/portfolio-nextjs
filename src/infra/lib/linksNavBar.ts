@@ -1,25 +1,25 @@
-export interface Link {
-  link: string;
-  href: string;
-}
+import {LinkNavBar} from '@interfaces/interfaceProps';
 
-const links: Link[] = [
+
+export const linksNavBar: LinkNavBar[] = [
   {
+    id: 1,
     link: 'Home',
     href: '/',
   },
   {
+    id: 2,
     link: 'About me',
     href: '/about',
   },
   {
+    id: 3,
     link: 'Projects',
     href: '/projects',
   },
   {
+    id: 4,
     link: 'Contact',
     href: '/contact',
   },
 ];
-
-export default links;

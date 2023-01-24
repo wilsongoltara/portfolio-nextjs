@@ -1,5 +1,5 @@
 import {LinksProps} from '@interfaces/interfaceProps';
-import Link from '../../components/Link';
+import Link from './Link';
 
 export default function Links({
   links,

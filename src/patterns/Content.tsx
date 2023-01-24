@@ -1,5 +1,5 @@
-import {InterfaceProps} from '@interfaces/interfaceProps';
+import {ChildrenProps} from '@interfaces/interfaceProps';
 
-export default function Content({children}: InterfaceProps) {
+export default function Content({children}: ChildrenProps) {
   return <main className="size-box">{children}</main>;
 }
