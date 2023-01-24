@@ -8,6 +8,7 @@ export default function Copyright() {
         <Link
           href='https://github.com/wilsongoltara'
           className='ml-1'
+          target='_blank'
         >
           Wilson S. Goltara
         </Link>

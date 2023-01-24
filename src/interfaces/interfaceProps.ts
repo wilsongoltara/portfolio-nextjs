@@ -12,6 +12,7 @@ export interface LinkProps {
   href: string;
   children: JSX.Element | ReactNode;
   className?: string;
+  target?: string;
 }
 
 export interface LinksProps {
