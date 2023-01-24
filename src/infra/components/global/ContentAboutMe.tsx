@@ -1,4 +1,4 @@
-import {ContentAboutMeProps} from '@interfaces/childrenProps';
+import {ContentAboutMeProps} from '@interfaces/interfaceProps';
 import Image from 'next/image';
 import Icons from './Icons';
 

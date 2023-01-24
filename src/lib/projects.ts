@@ -1,5 +1,5 @@
 import * as imageProjects from '@assets/projects';
-import {CardProps} from '@interfaces/childrenProps';
+import {CardProps} from '@interfaces/interfaceProps';
 
 export const projects: CardProps[] = [
   {

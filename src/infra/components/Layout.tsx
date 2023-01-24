@@ -1,4 +1,4 @@
-import {ChildrenProps} from '@interfaces/childrenProps';
+import {InterfaceProps} from '@interfaces/interfaceProps';
 import {createContext, lazy, Suspense, useState} from 'react';
 import Footer from './global/Footer';
 import NavBar from './global/NavBar';
@@ -8,7 +8,7 @@ const Content = lazy(() => import('./global/Content'));
 
 export const AppContext = createContext(null);
 
-export default function Layout({children}: ChildrenProps) {
+export default function Layout({children}: InterfaceProps) {
   const [nav, setNav] = useState(false);
 
   return (

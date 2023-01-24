@@ -1,4 +1,4 @@
-import {LinksProps} from '@interfaces/childrenProps';
+import {LinksProps} from '@interfaces/interfaceProps';
 import NextLink from 'next/link';
 
 export default function Links({

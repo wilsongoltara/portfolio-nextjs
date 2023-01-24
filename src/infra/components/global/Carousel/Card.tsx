@@ -1,4 +1,4 @@
-import {CardProps} from '@interfaces/childrenProps';
+import {CardProps} from '@interfaces/interfaceProps';
 import Image from 'next/image';
 import Button from './Button';
 

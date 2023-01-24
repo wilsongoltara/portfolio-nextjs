@@ -1,4 +1,4 @@
-import {HeadProps} from '@interfaces/childrenProps';
+import {HeadProps} from '@interfaces/interfaceProps';
 import NextHead from 'next/head';
 
 export default function Head({title}: HeadProps) {

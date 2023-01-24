@@ -8,7 +8,7 @@ import {
   SiTailwindcss,
   SiTypescript
 } from 'react-icons/si';
-import {Icons} from '@interfaces/childrenProps';
+import {Icons} from '@interfaces/interfaceProps';
 
 const stacks: Icons[] = [
   {

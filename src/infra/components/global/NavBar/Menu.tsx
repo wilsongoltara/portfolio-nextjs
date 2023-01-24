@@ -1,5 +1,5 @@
 import {AppContext} from '../../Layout';
-import {MenuProps} from '@interfaces/childrenProps';
+import {MenuProps} from '@interfaces/interfaceProps';
 import {useContext} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import Links from './Links';
