@@ -40,7 +40,6 @@ export interface HeadProps {
 }
 
 export interface HeroProps {
-  prefix?: string;
   name: string;
   describe: string;
 }
@@ -61,7 +60,6 @@ export interface IconProps {
   nameIcon: string;
   href: string;
 }
-
 
 export interface LinkNavBar {
   id: string | number;

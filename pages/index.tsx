@@ -1,8 +1,8 @@
 import Hero from '@components/Hero';
-import { dataHero } from '@lib/hero';
+import {dataHero} from '@lib/hero';
 
 export default function Home() {
-  const { prefix, name, describe } = dataHero;
+  const {name, describe} = dataHero;
 
-  return <Hero prefix={prefix} name={name} describe={describe} />;
+  return <Hero name={name} describe={describe}/>;
 }

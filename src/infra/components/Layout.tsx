@@ -8,6 +8,7 @@ const Content = lazy(() => import('@patterns/Content'));
 
 export const AppContext = createContext(null);
 
+// TODO - incrementar lógica para buscar dados da página e colocar no contexto da aplicação
 export default function Layout({children}: ChildrenProps) {
   const [nav, setNav] = useState(false);
 
