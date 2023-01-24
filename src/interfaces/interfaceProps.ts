@@ -36,6 +36,12 @@ export interface CopyrightProps {
   nameLink: string;
 }
 
+export interface DescriptionProjectProps {
+  nameProject: string;
+  description: string;
+  link: string;
+}
+
 export interface HeadProps {
   title: string;
 }
