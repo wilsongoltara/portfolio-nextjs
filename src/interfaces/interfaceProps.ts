@@ -2,9 +2,16 @@ import {Contact} from '@lib/contacts';
 import {Link} from '@lib/links';
 import {StaticImageData} from 'next/image';
 import {IconType} from 'react-icons';
+import {ReactNode} from 'react';
 
 export interface HeadProps {
   title: string;
+}
+
+export interface LinkProps {
+  href: string;
+  children: JSX.Element | ReactNode;
+  className?: string;
 }
 
 export interface LinksProps {
@@ -18,7 +25,7 @@ export interface MenuProps {
   links: Link[];
 }
 
-export interface ChildrenProps {
+export interface InterfaceProps {
   children: JSX.Element;
 }
 
