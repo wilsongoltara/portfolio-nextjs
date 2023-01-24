@@ -12,12 +12,11 @@ export default function Head({title}: HeadProps) {
       />
       <meta name="keywords" content="Wilson, Goltara, Wilson Goltara, Full Stack, Developer, Portfolio, Web developer"/>
       <meta property="og:type" content="website"/>
-      <meta property="og:image" content="/public/meta.webp"/>
+      <meta property="og:image" content="/meta.webp"/>
       <meta property="og:title" content="Wilson Goltara"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="googlebot" content="index, follow"/>
-      <meta name="robots" content="index, follow" />
-      <link rel="icon" href="/public/favicon.ico"/>
+      <link rel="icon" href="/favicon.ico"/>
     </NextHead>
   );
 }
