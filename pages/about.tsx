@@ -1,6 +1,6 @@
 import me from '@assets/me.jpg';
 import ContentAboutMe from '@components/global/ContentAboutMe';
-import { AppContext } from '@components/layout';
+import { AppContext } from '@components/Layout';
 import stacks from '@lib/stacks';
 import Head from 'next/head';
 import { useContext } from 'react';

@@ -1,5 +1,5 @@
 import ProjectsCarousel from '@components/global/Carousel';
-import { AppContext } from '@components/layout';
+import { AppContext } from '@components/Layout';
 import Head from 'next/head';
 import { useContext } from 'react';
 
