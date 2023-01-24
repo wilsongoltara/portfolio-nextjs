@@ -1,5 +1,5 @@
-import ProjectsCarousel from '../src/patterns/Carousel';
-import { AppContext } from '@components/Layout';
+import ProjectsCarousel from '@patterns/Carousel';
+import { AppContext } from '@infra/components/Layout';
 import { useContext } from 'react';
 
 export default function Projects(){

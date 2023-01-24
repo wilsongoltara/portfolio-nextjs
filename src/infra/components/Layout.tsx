@@ -1,10 +1,10 @@
 import {InterfaceProps} from '@interfaces/interfaceProps';
 import {createContext, lazy, Suspense, useState} from 'react';
-import Footer from '../../patterns/Footer';
-import NavBar from '../../patterns/NavBar';
-import Head from '@components/Head';
+import Footer from '@patterns/Footer';
+import NavBar from '@patterns/NavBar';
+import Head from '@infra/components/Head';
 
-const Content = lazy(() => import('../../patterns/Content'));
+const Content = lazy(() => import('@patterns/Content'));
 
 export const AppContext = createContext(null);
 

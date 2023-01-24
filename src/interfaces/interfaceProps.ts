@@ -1,5 +1,5 @@
-import {Contact} from '../infra/lib/contacts';
-import {Link} from '../infra/lib/links';
+import {Contact} from '@lib/contacts';
+import {Link} from '@lib/links';
 import {StaticImageData} from 'next/image';
 import {IconType} from 'react-icons';
 import {ReactNode} from 'react';
@@ -52,7 +52,7 @@ export interface ContactsProps {
 }
 
 export interface CardProps {
-  pathProject: StaticImageData;
+  pathProject: string;
   nameProject: string;
   description: string;
   link: string;

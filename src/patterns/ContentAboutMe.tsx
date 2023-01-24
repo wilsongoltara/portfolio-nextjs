@@ -1,6 +1,6 @@
 import {ContentAboutMeProps} from '@interfaces/interfaceProps';
+import Icons from '@components/Icons';
 import Image from 'next/image';
-import Icons from './Icons';
 
 export default function ContentAboutMe({ hrefImage, stacks}: ContentAboutMeProps) {
   return (

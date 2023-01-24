@@ -1,6 +1,6 @@
-import icons from '../../infra/lib/icons';
+import icons from '@infra/lib/icons';
 import Copyright from './Copyright';
-import Icons from '../Icons';
+import Icons from '@components/Icons';
 
 export default function Footer() {
   return (

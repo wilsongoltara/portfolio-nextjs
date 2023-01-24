@@ -24,14 +24,23 @@
         "./src/interfaces/*"
       ],
       "@components/*": [
-        "./src/infra/components/*"
+        "./src/components/*"
       ],
       "@assets/*": [
         "./src/assets/*"
       ],
-      "@lib/*": [
-        "./src/lib/*"
+      "@infra/*": [
+        "./src/infra/*"
       ],
+      "@lib/*": [
+        "./src/infra/lib/*"
+      ],
+      "@patterns/*": [
+        "./src/patterns/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ]
     }
   },
   "include": [

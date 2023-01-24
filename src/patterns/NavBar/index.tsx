@@ -1,4 +1,4 @@
-import links from '../../infra/lib/links';
+import links from '@infra/lib/links';
 import Icon from './Icon';
 import Menu from './Menu';
 

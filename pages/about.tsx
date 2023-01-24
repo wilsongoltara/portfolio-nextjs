@@ -1,7 +1,7 @@
-import me from '@assets/me.jpg';
-import ContentAboutMe from '@components/../src/components/patterns/ContentAboutMe';
-import { AppContext } from '@components/Layout';
-import stacks from '../src/infra/lib/stacks';
+import me from '@public/images/me.webp';
+import ContentAboutMe from '@patterns/ContentAboutMe';
+import { AppContext } from '@infra/components/Layout';
+import stacks from '@lib/stacks';
 import { useContext } from 'react';
 
 export default function About() {

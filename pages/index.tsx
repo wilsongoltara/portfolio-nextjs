@@ -1,5 +1,5 @@
-import Hero from '../src/patterns/Hero';
-import { dataHero } from '../src/infra/lib/hero';
+import Hero from '@components/Hero';
+import { dataHero } from '@lib/hero';
 
 export default function Home() {
   const { prefix, name, describe } = dataHero;

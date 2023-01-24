@@ -4,8 +4,8 @@ import Button from './Button';
 
 export default function Card({ pathProject, nameProject, description, link, isSelected }: CardProps) {
   return (
-    <div className={`flex flex-col items-center m-5 text-gray-400 ${isSelected ? 'opacity-1' : 'opacity-25'}`}>
-      <Image src={pathProject} alt='Project developed by Wilson Goltara' height={isSelected ? 350 : 250 } />
+    <div className={`flex flex-col items-center m-3 text-gray-400 ${isSelected ? 'opacity-1' : 'opacity-25'}`}>
+      <Image src={pathProject} alt='Project developed by Wilson Goltara' height={isSelected ? 275 : 250 } width={600}/>
       {isSelected && (
         <div className="w-5/6 mt-5">
           <h1 className='font-bold capitalize text-xl md:text-2xl text-gray-100'>{nameProject}</h1>
