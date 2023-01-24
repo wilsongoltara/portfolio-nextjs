@@ -1,4 +1,4 @@
-import ProjectsCarousel from '../src/infra/components/global/Carousel';
+import ProjectsCarousel from '../src/patterns/Carousel';
 import { AppContext } from '@components/Layout';
 import { useContext } from 'react';
 

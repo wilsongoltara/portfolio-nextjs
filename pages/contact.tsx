@@ -1,5 +1,5 @@
-import ContentContact from '../src/infra/components/global/ContentContact';
-import contacts from '../src/lib/contacts';
+import ContentContact from '../src/patterns/ContentContact';
+import contacts from '../src/infra/lib/contacts';
 
 export default function Contact() {
   return (

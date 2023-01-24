@@ -1,5 +1,5 @@
 import {IconProps} from '@interfaces/interfaceProps';
-import Link from '@components/Link';
+import Link from '../components/Link';
 
 export default function Icons({ icons, classList }: IconProps) {
   return (

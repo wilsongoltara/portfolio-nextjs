@@ -1,10 +1,10 @@
 import {InterfaceProps} from '@interfaces/interfaceProps';
 import {createContext, lazy, Suspense, useState} from 'react';
-import Footer from './global/Footer';
-import NavBar from './global/NavBar';
+import Footer from '../../patterns/Footer';
+import NavBar from '../../patterns/NavBar';
 import Head from '@components/Head';
 
-const Content = lazy(() => import('./global/Content'));
+const Content = lazy(() => import('../../patterns/Content'));
 
 export const AppContext = createContext(null);
 
@@ -12,7 +12,7 @@ export default function Layout({children}: InterfaceProps) {
   const [nav, setNav] = useState(false);
 
   return (
-    <main className="flex flex-col justify-between items-center min-h-screen">
+    <div className="flex flex-col justify-between items-center min-h-screen">
       <Head title="Wilson Goltara"/>
       <AppContext.Provider value={{nav, setNav}}>
         <NavBar/>
@@ -21,6 +21,6 @@ export default function Layout({children}: InterfaceProps) {
         </Suspense>
         <Footer/>
       </AppContext.Provider>
-    </main>
+    </div>
   );
 };
