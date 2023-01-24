@@ -1,5 +1,5 @@
 import me from '@public/images/me.webp';
-import ContentAboutMe from '@patterns/ContentAboutMe';
+import ContentAboutMe from '@components/ContentAboutMe';
 import {AppContext} from '@infra/components/Layout';
 import {stacks} from '@lib/stacks';
 import {useContext} from 'react';

@@ -1,6 +1,6 @@
-import ProjectsCarousel from '@patterns/Carousel';
-import { AppContext } from '@infra/components/Layout';
-import { useContext } from 'react';
+import ProjectsCarousel from '@patterns/ProjectsCarousel';
+import {AppContext} from '@infra/components/Layout';
+import {useContext} from 'react';
 
 export default function Projects(){
   const { nav } = useContext(AppContext);

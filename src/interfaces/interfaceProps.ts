@@ -16,7 +16,7 @@ export interface ContactsProps {
 }
 
 export interface CardProps {
-  pathProject: string;
+  pathImage: string;
   nameProject: string;
   description: string;
   link: string;

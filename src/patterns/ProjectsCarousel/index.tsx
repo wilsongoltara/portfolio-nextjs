@@ -1,7 +1,7 @@
 import {projects} from '@lib/projects';
 import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Card from './Card';
+import Card from '@components/Card';
 
 export default function ProjectsCarousel() {
   const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
@@ -18,13 +18,13 @@ export default function ProjectsCarousel() {
       showThumbs={false}
       renderItem={customRenderItem}
     >
-      {projects.map(({ description, link, nameProject, pathProject }, index) => (
+      {projects.map(({description, link, nameProject, pathImage}) => (
         <Card
-          key={index}
+          key={nameProject}
           description={description}
           link={link}
           nameProject={nameProject}
-          pathProject={pathProject}
+          pathImage={pathImage}
         />
       ))}
     </Carousel>
