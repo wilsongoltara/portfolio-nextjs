@@ -1,5 +1,5 @@
-import Hero from '@components/global/Hero';
-import { dataHero } from '@lib/hero';
+import Hero from '../src/infra/components/global/Hero';
+import { dataHero } from '../src/lib/hero';
 import Head from 'next/head';
 
 export default function Home() {

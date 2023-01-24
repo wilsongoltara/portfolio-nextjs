@@ -1,4 +1,4 @@
-import { AppContext } from '@components/Layout';
+import { AppContext } from '../../Layout';
 import { MenuProps } from '@interfaces/props';
 import { useContext } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';

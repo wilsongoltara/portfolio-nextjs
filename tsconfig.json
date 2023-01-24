@@ -21,16 +21,16 @@
     "incremental": true,
     "paths": {
       "@interfaces/*": [
-        "./interfaces/*"
+        "./src/interfaces/*"
       ],
       "@components/*": [
-        "./components/*"
+        "./src/infra/components/*"
       ],
       "@assets/*": [
-        "./assets/*"
+        "./src/assets/*"
       ],
       "@lib/*": [
-        "./lib/*"
+        "./src/lib/*"
       ],
     }
   },

@@ -1,7 +1,7 @@
 import me from '@assets/me.jpg';
-import ContentAboutMe from '@components/global/ContentAboutMe';
-import { AppContext } from '@components/Layout';
-import stacks from '@lib/stacks';
+import ContentAboutMe from '../src/infra/components/global/ContentAboutMe';
+import { AppContext } from '../src/infra/components/Layout';
+import stacks from '../src/lib/stacks';
 import Head from 'next/head';
 import { useContext } from 'react';
 

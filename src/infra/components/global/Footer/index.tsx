@@ -1,4 +1,4 @@
-import icons from '@lib/icons';
+import icons from '../../../../lib/icons';
 import Copyright from './Copyright';
 import Icons from '../Icons';
 

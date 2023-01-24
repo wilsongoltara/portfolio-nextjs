@@ -1,5 +1,5 @@
-import { Contact } from '@lib/contacts';
-import { Link } from '@lib/links';
+import { Contact } from '../lib/contacts';
+import { Link } from '../lib/links';
 import { StaticImageData } from 'next/image';
 import { IconType } from 'react-icons';
 
