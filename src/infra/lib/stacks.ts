@@ -8,49 +8,55 @@ import {
   SiTailwindcss,
   SiTypescript
 } from 'react-icons/si';
-import {Icons} from '@interfaces/interfaceProps';
+import {Icon} from '@interfaces/interfaceProps';
 
-const stacks: Icons[] = [
+export const stacks: Icon[] = [
   {
+    id: 1,
     name: 'ReactJS',
     href: 'https://nextjs.org/',
-    Icon: SiReact,
+    IconComponent: SiReact,
   },
   {
+    id: 2,
     name: 'NextJS',
     href: 'https://nextjs.org/',
-    Icon: SiNextdotjs,
+    IconComponent: SiNextdotjs,
   },
   {
+    id: 3,
     name: 'Typescript',
     href: 'https://www.typescriptlang.org/',
-    Icon: SiTypescript,
+    IconComponent: SiTypescript,
   },
   {
+    id: 4,
     name: 'NodeJS',
     href: 'https://nodejs.org/',
-    Icon: SiNodedotjs,
+    IconComponent: SiNodedotjs,
   },
   {
+    id: 5,
     name: 'TailwindCSS',
     href: 'https://tailwindcss.com/',
-    Icon: SiTailwindcss,
+    IconComponent: SiTailwindcss,
   },
   {
+    id: 6,
     name: 'Jest',
     href: 'https://jestjs.io/pt-BR/',
-    Icon: SiJest,
+    IconComponent: SiJest,
   },
   {
+    id: 7,
     name: 'MongoDB',
     href: 'https://www.mongodb.com/',
-    Icon: SiMongodb,
+    IconComponent: SiMongodb,
   },
   {
+    id: 9,
     name: 'MySQL',
     href: 'https://www.mysql.com/',
-    Icon: SiMysql,
+    IconComponent: SiMysql,
   },
 ];
-
-export default stacks;

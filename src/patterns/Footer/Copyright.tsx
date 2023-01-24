@@ -1,16 +1,17 @@
 import Link from '../../components/Link';
+import {CopyrightProps} from '@interfaces/interfaceProps';
 
-export default function Copyright() {
+export default function Copyright({nameCopy, nameLink, href, year}: CopyrightProps) {
   return (
     <article>
-      <span className='p-2'>
-        WG &copy; 2022 by
+      <span className="p-2">
+        {`${nameCopy}© ${year} by`}
         <Link
-          href='https://github.com/wilsongoltara'
-          className='ml-1'
-          target='_blank'
+          href={href}
+          className="ml-1"
+          target="_blank"
         >
-          Wilson S. Goltara
+          {nameLink}
         </Link>
       </span>
     </article>

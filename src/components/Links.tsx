@@ -9,8 +9,8 @@ export default function Links({
 }: LinksProps) {
   return (
     <ul className={classList}>
-      {links.map(({ link, href }, index) => (
-        <li key={index} className={classItem} onClick={onClick}>
+      {links.map(({link, href, id}) => (
+        <li key={id} className={classItem} onClick={onClick}>
           <Link href={href}>{link}</Link>
         </li>
       ))}

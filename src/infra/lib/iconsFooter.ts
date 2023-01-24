@@ -1,22 +1,23 @@
 import {SiGithub, SiGmail, SiLinkedin} from 'react-icons/si';
-import {Icons} from '@interfaces/interfaceProps';
+import {Icon} from '@interfaces/interfaceProps';
 
-const icons: Icons[] = [
+export const iconsFooter: Icon[] = [
   {
+    id: 1,
     name: 'GitHub',
     href: 'https://github.com/wilsongoltara',
-    Icon: SiGithub,
+    IconComponent: SiGithub,
   },
   {
+    id: 2,
     name: 'Gmail',
     href: 'https://github.com/wilsongoltara',
-    Icon: SiGmail,
+    IconComponent: SiGmail,
   },
   {
+    id: 3,
     name: 'Linkedin',
     href: 'https://linkedin.com/in/wilsongoltara',
-    Icon: SiLinkedin,
+    IconComponent: SiLinkedin,
   },
 ];
-
-export default icons;

@@ -10,22 +10,24 @@ export default function Menu({ links }: MenuProps) {
   return (
     <menu>
       <div>
-        <Links links={links} classList='hidden md:flex' classItem='item' />
+        <Links links={links} classList="hidden md:flex" classItem="item"/>
       </div>
       <div
         onClick={() => setNav(!nav)}
-        className='cursor-pointer pr-2 md:hidden'
+        className="cursor-pointer pr-2 md:hidden"
       >
-        {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
+        {nav ? <FaTimes size={25}/> : <FaBars size={25}/>}
       </div>
-      {nav && (
-        <Links
-          links={links}
-          classList='burger-menu'
-          classItem='item py-5 text-3xl'
-          onClick={() => setNav(!nav)}
-        />
-      )}
+      <div>
+        {nav && (
+          <Links
+            links={links}
+            classList="burger-menu"
+            classItem="item py-5 text-3xl"
+            onClick={() => setNav(!nav)}
+          />
+        )}
+      </div>
     </menu>
   );
 }
