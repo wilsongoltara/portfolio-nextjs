@@ -1,27 +1,23 @@
 import {ChildrenProps} from '@interfaces/interfaceProps';
-import {createContext, lazy, Suspense, useState} from 'react';
+import {createContext, useState} from 'react';
 import Footer from '@patterns/Footer';
 import NavBar from '@patterns/NavBar';
 import Head from '@infra/components/Head';
-
-const Content = lazy(() => import('@patterns/Content'));
+import Content from '@patterns/Content';
 
 export const AppContext = createContext(null);
 
-// TODO - incrementar lógica para buscar dados da página e colocar no contexto da aplicação
 export default function Layout({children}: ChildrenProps) {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="flex flex-col justify-between items-center min-h-screen">
+    <div className="layout">
       <Head title="Wilson Goltara"/>
       <AppContext.Provider value={{nav, setNav}}>
         <NavBar/>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Content>{children}</Content>
-        </Suspense>
-        <Footer/>
+        <Content>{children}</Content>
       </AppContext.Provider>
+      <Footer/>
     </div>
   );
 };

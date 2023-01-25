@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@layer components {
+@layer base {
   html {
-    min-width: 320px;
-    font-family: 'Raleway', sans-serif;
+    @apply font-boring min-w-[320px];
     background: rgb(34, 34, 34)
       radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
   }
-  
+
+  .layout {
+    @apply flex flex-col justify-between items-center min-h-screen;
+  }
+}
+
+@layer components {
   .button-bg {
     background-color: #222222;
     box-shadow: 8px 8px 44px 5px rgba(0,0,0,0.3);

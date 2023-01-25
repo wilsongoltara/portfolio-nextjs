@@ -10,6 +10,9 @@ module.exports = {
         me: 'url(\'/images/me.jpg\')',
       },
     },
+    fontFamily: {
+      boring: ['Raleway', 'sans-serif']
+    }
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
 };
