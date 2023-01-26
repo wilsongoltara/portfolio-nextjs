@@ -1,10 +1,10 @@
-import { HeadProps } from '@interfaces/interfaceProps';
+import { ChildrenProps } from '@interfaces/interfaceProps';
 import NextHead from 'next/head';
 
-export default function Head({title}: HeadProps) {
+export default function Head({children}: ChildrenProps) {
   return (
     <NextHead>
-      <title>{title}</title>
+      <title>{children}</title>
       <meta
         name="description"
         content="Full-stack developer, JavaScript enthusiast, and course creator"

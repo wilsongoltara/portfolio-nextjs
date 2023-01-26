@@ -8,7 +8,7 @@ export interface ButtonProps {
 }
 
 export interface ChildrenProps {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[] | string;
 }
 
 export interface ContactsProps {
@@ -40,10 +40,6 @@ export interface DescriptionProjectProps {
   nameProject: string;
   description: string;
   link: string;
-}
-
-export interface HeadProps {
-  title: string;
 }
 
 export interface HeroProps {

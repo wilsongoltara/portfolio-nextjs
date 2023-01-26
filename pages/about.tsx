@@ -3,6 +3,7 @@ import ContentAboutMe from '@components/ContentAboutMe';
 import {AppContext} from '@infra/components/Layout';
 import {stacks} from '@lib/stacks';
 import {useContext} from 'react';
+import PageTitle from '@components/PageTitle';
 
 const describe = `
     I am currently studying Computer Science at the Federal University of Espírito Santo.\n
@@ -19,6 +20,7 @@ export default function About() {
 
   return (
     <section className={`flex justify-center ${nav ? 'hidden' : null}`}>
+      <PageTitle>About me</PageTitle>
       <ContentAboutMe hrefImage={me} stacks={stacks} describe={describe}/>
     </section>
   );

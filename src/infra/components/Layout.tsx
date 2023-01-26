@@ -12,7 +12,7 @@ export default function Layout({children}: ChildrenProps) {
 
   return (
     <div className="layout">
-      <Head title="Wilson Goltara"/>
+      <Head>Wilson Goltara</Head>
       <AppContext.Provider value={{nav, setNav}}>
         <NavBar/>
         <Content>{children}</Content>
