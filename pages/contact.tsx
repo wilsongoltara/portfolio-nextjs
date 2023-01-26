@@ -3,6 +3,7 @@ import PageTitle from '@components/PageTitle';
 import contacts from '@lib/contacts';
 
 export default function Contact() {
+
   return (
     <section className='text-center'>
       <PageTitle>Contacts</PageTitle>

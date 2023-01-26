@@ -1,6 +1,8 @@
 import {linksNavBar} from '@lib/linksNavBar';
 import Icon from '@components/Icon';
-import Menu from './Menu';
+import dynamic from 'next/dynamic';
+
+const Menu = dynamic(() => import('./Menu'));
 
 export default function NavBar() {
   return (

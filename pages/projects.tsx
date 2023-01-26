@@ -1,9 +1,11 @@
-import ProjectsCarousel from '@patterns/ProjectsCarousel';
 import {AppContext} from '@infra/context/AppContext';
 import {useContext} from 'react';
 import PageTitle from '@components/PageTitle';
+import dynamic from 'next/dynamic';
 
-export default function Projects(){
+const ProjectsCarousel = dynamic(() => import('@patterns/ProjectsCarousel'));
+
+export default function Projects() {
   const { nav } = useContext(AppContext);
 
   return (
