@@ -3,12 +3,13 @@ import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Card from '@components/Card';
 
+const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
+
 export default function ProjectsCarousel() {
-  const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
 
   return (
     <Carousel
-      className='w-[90%] max-w-3xl min-w-[320px]'
+      className='max-w-2xl min-w-[320px]'
       emulateTouch
       centerMode
       selectedItem={1}

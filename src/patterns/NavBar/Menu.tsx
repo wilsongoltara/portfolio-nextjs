@@ -1,4 +1,4 @@
-import {AppContext} from '@infra/components/Layout';
+import {AppContext} from '@infra/context/AppContext';
 import {MenuProps} from '@interfaces/interfaceProps';
 import {useContext} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
@@ -23,7 +23,7 @@ export default function Menu({ links }: MenuProps) {
           <Links
             links={links}
             classList="burger-menu"
-            classItem="item py-5 text-3xl"
+            classItem="text-gray-200 py-4 text-2xl"
             onClick={() => setNav(!nav)}
           />
         )}

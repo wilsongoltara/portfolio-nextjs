@@ -1,6 +1,6 @@
 import me from '@public/images/me.webp';
 import ContentAboutMe from '@components/ContentAboutMe';
-import {AppContext} from '@infra/components/Layout';
+import {AppContext} from '@infra/context/AppContext';
 import {stacks} from '@lib/stacks';
 import {useContext} from 'react';
 import PageTitle from '@components/PageTitle';

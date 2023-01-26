@@ -30,7 +30,7 @@
   }
 
   .burger-menu {
-    @apply flex flex-col justify-center items-center absolute md:hidden right-0 w-3/5 h-1/2 bg-gradient-to-b from-gray-900 to-black text-gray-100;
+    @apply flex flex-col justify-center items-center absolute md:hidden right-2 w-2/5 h-1/2 divide-y bg-slate-700 rounded-sm divide-gray-600;
   }
 
   .name-of-developer {
