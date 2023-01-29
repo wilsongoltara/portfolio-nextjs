@@ -1,5 +1,5 @@
 import {CardProps} from '@interfaces/interfaceProps';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import DescriptionProject from '@components/DescriptionProject';
 
 export default function Card({pathImage, nameProject, description, link, isSelected}: CardProps) {

@@ -4,6 +4,7 @@ import {AppContext} from '@infra/context/AppContext';
 import {stacks} from '@lib/stacks';
 import {useContext} from 'react';
 import PageTitle from '@components/PageTitle';
+import Transition from '@components/Transition';
 
 const describe = `
     I am currently studying Computer Science at the Federal University of Espírito Santo.\n
@@ -19,9 +20,11 @@ export default function About() {
   const {nav} = useContext(AppContext);
 
   return (
-    <section className={`flex justify-center ${nav ? 'hidden' : null}`}>
-      <PageTitle>About me</PageTitle>
-      <ContentAboutMe hrefImage={me} stacks={stacks} describe={describe}/>
-    </section>
+    <Transition>
+      <section className={`flex justify-center ${nav ? 'hidden' : null}`}>
+        <PageTitle>About me</PageTitle>
+        <ContentAboutMe hrefImage={me} stacks={stacks} describe={describe}/>
+      </section>
+    </Transition>
   );
 }

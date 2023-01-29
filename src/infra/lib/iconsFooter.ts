@@ -11,7 +11,7 @@ export const iconsFooter: Icon[] = [
   {
     id: 2,
     name: 'Gmail',
-    href: 'https://github.com/wilsongoltara',
+    href: 'mailto:wilson.goltara15@gmail.com',
     IconComponent: SiGmail,
   },
   {
