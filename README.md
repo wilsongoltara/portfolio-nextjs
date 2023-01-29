@@ -1,6 +1,5 @@
 <div align="center" id="top">
   <h1>My Portfolio</h1>
-  <span>Ainda em construção</span>
 </div>
 
 # wilson-goltara.vercel.app
