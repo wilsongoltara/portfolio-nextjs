@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply font-boring min-w-[320px];
+  background: rgb(34, 34, 34)
+    radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
+}
+
+#__next {
+  @apply flex flex-col justify-between items-center min-h-screen;
+}
 
 @layer components {
-  html {
-    min-width: 320px;
-    font-family: 'Raleway', sans-serif;
-    background: rgb(34, 34, 34)
-      radial-gradient(circle, rgba(34, 34, 34, 1) 18%, rgba(0, 0, 0, 1) 80%);
-  }
-  
   .button-bg {
     background-color: #222222;
     box-shadow: 8px 8px 44px 5px rgba(0,0,0,0.3);
@@ -27,7 +28,7 @@
   }
 
   .burger-menu {
-    @apply flex flex-col justify-center items-center absolute md:hidden right-0 w-3/5 h-1/2 bg-gradient-to-b from-gray-900 to-black text-gray-100;
+    @apply flex flex-col justify-center items-center absolute md:hidden right-2 w-2/5 h-1/2 divide-y bg-slate-700 rounded-sm divide-gray-600;
   }
 
   .name-of-developer {

@@ -1,19 +1,14 @@
-import ContentContact from '@components/global/ContentContact';
+import ContentContact from '@components/ContentContact';
+import PageTitle from '@components/PageTitle';
+import Transition from '@components/Transition';
 import contacts from '@lib/contacts';
-import Head from 'next/head';
 
 export default function Contact() {
+
   return (
-    <>
-      <Head>
-        <title>Contact me</title>
-        <meta
-          name='description'
-          content='information about contacts'
-          key='desc'
-        />
-      </Head>
+    <Transition>
       <section className='text-center'>
+        <PageTitle>Contacts</PageTitle>
         <div>
           <h2 className='text-3xl md:text-4xl text-gray-200 font-bold uppercase'>
             Contact
@@ -24,6 +19,6 @@ export default function Contact() {
         </div>
         <ContentContact contacts={contacts}/>
       </section>
-    </>
+    </Transition>
   );
 }
