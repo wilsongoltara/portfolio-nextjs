@@ -28,7 +28,7 @@ html {
   }
 
   .burger-menu {
-    @apply flex flex-col justify-center items-center absolute md:hidden right-2 w-2/5 h-1/2 divide-y bg-slate-700 rounded-sm divide-gray-600;
+    @apply flex flex-col justify-center items-center absolute md:hidden right-2 w-2/5 h-2/5 divide-y bg-slate-700 rounded-sm divide-gray-600;
   }
 
   .name-of-developer {
