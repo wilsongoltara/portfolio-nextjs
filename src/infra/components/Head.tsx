@@ -17,7 +17,7 @@ export default function Head({children}: ChildrenProps) {
       <meta name="keywords" content="Wilson, Goltara, Wilson Goltara, Full Stack, Developer, Portfolio, Web developer"/>
       <meta property='og:site_name' content='Wilson Goltara Portfolio' />
       <meta property="og:type" content="website"/>
-      <meta property="og:theme_color" content="dark"/>
+      <meta property="og:theme-color" content="dark"/>
       <meta property='og:url' content='https://wilsongoltara.me' />
       <meta property="og:image" content="/meta.webp"/>
       <meta name="robots" content="index, follow"/>

@@ -3,9 +3,6 @@ import Footer from '@patterns/Footer';
 import NavBar from '@patterns/NavBar';
 import Head from '@infra/components/Head';
 import AppContextProvider from '@infra/context/AppContext';
-import dynamic from 'next/dynamic';
-
-const Content = dynamic(() => import('@patterns/Content'));
 
 export default function Layout({children}: ChildrenProps) {
   return (
@@ -13,7 +10,7 @@ export default function Layout({children}: ChildrenProps) {
       <Head>Wilson Goltara</Head>
       <AppContextProvider>
         <NavBar/>
-        <Content>{children}</Content>
+        <main className='size-box'>{children}</main>
       </AppContextProvider>
       <Footer/>
     </>
