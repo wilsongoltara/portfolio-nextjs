@@ -1,12 +1,14 @@
 import ContentContact from '@components/ContentContact';
 import PageTitle from '@components/PageTitle';
 import Transition from '@components/Transition';
+import { AppContext } from '@infra/context/AppContext';
 import contacts from '@lib/contacts';
+import { useContext } from 'react';
 
 export default function Contact() {
-
+  const {nav} = useContext(AppContext);
   return (
-    <Transition>
+    (!nav &&<Transition>
       <section className='text-center'>
         <PageTitle>Contacts</PageTitle>
         <div>
@@ -19,6 +21,6 @@ export default function Contact() {
         </div>
         <ContentContact contacts={contacts}/>
       </section>
-    </Transition>
+    </Transition>)
   );
 }
