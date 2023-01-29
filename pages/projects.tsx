@@ -1,20 +1,20 @@
-import ProjectsCarousel from '@components/global/Carousel';
-import { AppContext } from '@components/layout';
-import Head from 'next/head';
-import { useContext } from 'react';
+import {AppContext} from '@infra/context/AppContext';
+import {useContext} from 'react';
+import PageTitle from '@components/PageTitle';
+import Transition from '@components/Transition';
+import dynamic from 'next/dynamic';
 
-export default function Projects(){
+const ProjectsCarousel = dynamic(() => import('@patterns/ProjectsCarousel'));
+
+export default function Projects() {
   const { nav } = useContext(AppContext);
 
   return (
-    <>
-      <Head>
-        <title>Projects</title>
-        <meta name="description" content="Projects developement" />
-      </Head>
-      <section className={`${nav ? 'hidden' : null} flex flex-col items-center`}>
+    <Transition>
+      <section className={`${nav ? 'hidden' : null} flex flex-col items-center max-w-[90%]:`}>
+        <PageTitle>Projects</PageTitle>
         <ProjectsCarousel />
       </section>
-    </>
+    </Transition>
   );
 }

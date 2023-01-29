@@ -21,17 +21,26 @@
     "incremental": true,
     "paths": {
       "@interfaces/*": [
-        "./interfaces/*"
+        "./src/interfaces/*"
       ],
       "@components/*": [
-        "./components/*"
+        "./src/components/*"
       ],
       "@assets/*": [
-        "./assets/*"
+        "./src/assets/*"
+      ],
+      "@infra/*": [
+        "./src/infra/*"
       ],
       "@lib/*": [
-        "./lib/*"
+        "./src/infra/lib/*"
       ],
+      "@patterns/*": [
+        "./src/patterns/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ]
     }
   },
   "include": [
