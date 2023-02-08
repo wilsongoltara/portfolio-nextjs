@@ -4,7 +4,7 @@ import Link from './Link';
 export default function Button({ linkProject }: ButtonProps) {
   return (
     <button className='button-bg h-10 w-40 shadow-lg'>
-      <Link href={linkProject}>View Project</Link>
+      <Link href={linkProject} target='_blank'>View Project</Link>
     </button>
   );
 }
