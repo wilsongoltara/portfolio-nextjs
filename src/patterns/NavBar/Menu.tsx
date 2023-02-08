@@ -10,9 +10,7 @@ export default function Menu({ links }: MenuProps) {
   
   return (
     <menu>
-      <div>
-        <Links links={links} classList="hidden md:flex" classItem="item"/>
-      </div>
+      <Links links={links} classList="hidden md:flex" classItem="item"/>
       <div
         onClick={() => setNav((nav) => !nav)}
         className="cursor-pointer pr-2 md:hidden"
@@ -30,7 +28,7 @@ export default function Menu({ links }: MenuProps) {
               x: '100%'
             }}
             transition={{ type: 'spring', bounce: 0, duration: 0.5 }}
-            className="fixed bg-gray-600 shadow-lg top-20 right-0 w-full max-w-xs h-2/6 p-5"
+            className="fixed bg-gray-600 shadow-lg top-20 right-0 w-full max-w-xs p-5"
           >
             <Links
               links={links}

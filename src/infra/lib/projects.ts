@@ -6,7 +6,7 @@ export const projects: CardProps[] = [
     pathImage: imageProjects.indioCoffee,
     nameProject: 'Indio Coffee',
     description: 'A simple clone of Starbucks main page',
-    link: 'https://indiocoffee.surge.sh/'
+    link: 'https://indio-coffee.vercel.app/'
   },
   {
     pathImage: imageProjects.notificationsServices,
