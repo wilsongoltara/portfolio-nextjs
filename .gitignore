@@ -56,3 +56,5 @@ yarn-error.log*
 
 # todo
 .TODO
+
+package-lock.json
