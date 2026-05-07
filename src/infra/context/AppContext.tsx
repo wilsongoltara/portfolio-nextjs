@@ -1,23 +1,36 @@
-import { ChildrenProps } from '@interfaces/interfaceProps';
-import {createContext, Dispatch, SetStateAction, useMemo, useState} from 'react';
+'use client';
 
-interface AppContextInterface {
-  nav: boolean,
+import { ChildrenProps } from '@interfaces/interfaceProps';
+import {
+  createContext,
+  Dispatch,
+  SetStateAction,
+  useContext,
+  useMemo,
+  useState,
+} from 'react';
+
+interface AppContextValue {
+  nav: boolean;
   setNav: Dispatch<SetStateAction<boolean>>;
 }
 
-export const AppContext = createContext<AppContextInterface>(null);
+const AppContext = createContext<AppContextValue | undefined>(undefined);
 
-export default function AppContextProvider({children}: ChildrenProps) {
+export function useAppContext(): AppContextValue {
+  const value = useContext(AppContext);
+  if (!value) {
+    throw new Error('useAppContext must be used within AppContextProvider');
+  }
+  return value;
+}
+
+export default function AppContextProvider({
+  children,
+}: Readonly<ChildrenProps>) {
   const [nav, setNav] = useState(false);
 
-  const context = useMemo(() => ({nav, setNav}), [nav]);
+  const value = useMemo(() => ({ nav, setNav }), [nav]);
 
-  return (
-    <>
-      <AppContext.Provider value={context}>
-        {children}
-      </AppContext.Provider>
-    </>
-  );
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }

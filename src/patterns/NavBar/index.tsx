@@ -1,8 +1,8 @@
+'use client';
+
 import {linksNavBar} from '@lib/linksNavBar';
 import Icon from '@components/Icon';
-import dynamic from 'next/dynamic';
-
-const Menu = dynamic(() => import('./Menu'));
+import Menu from './Menu';
 
 export default function NavBar() {
   return (

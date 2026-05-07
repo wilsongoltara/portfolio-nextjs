@@ -1,7 +1,9 @@
+'use client';
+
 import PageTitle from '@components/PageTitle';
 import Transition from '@components/Transition';
 
-export default function Custom404() {
+export default function NotFound() {
   return (
     <Transition>
       <div className="flex justify-center">
@@ -11,3 +13,4 @@ export default function Custom404() {
     </Transition>
   );
 }
+

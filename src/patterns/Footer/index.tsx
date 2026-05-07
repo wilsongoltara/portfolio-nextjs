@@ -1,8 +1,6 @@
 import {iconsFooter} from '@lib/iconsFooter';
-import dynamic from 'next/dynamic';
+import Icons from '@components/Icons';
 import Copyright from './Copyright';
-
-const Icons = dynamic(() => import('@components/Icons'));
 
 export default function Footer() {
   return (

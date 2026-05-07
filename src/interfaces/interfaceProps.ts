@@ -1,14 +1,14 @@
 import {Contact} from '@lib/contacts';
 import {StaticImageData} from 'next/image';
 import {IconType} from 'react-icons';
-import {ReactNode} from 'react';
+import { ReactNode } from 'react';
 
 export interface ButtonProps {
   linkProject: string;
 }
 
 export interface ChildrenProps {
-  children: JSX.Element | JSX.Element[] | string;
+  children: ReactNode;
 }
 
 export interface ContactsProps {
@@ -72,9 +72,10 @@ export interface LinkNavBar {
 
 export interface LinkProps {
   href: string;
-  children: JSX.Element | ReactNode;
+  children: ReactNode;
   className?: string;
-  target?: string;
+  target?: React.HTMLAttributeAnchorTarget;
+  rel?: string;
 }
 
 export interface LinksProps {

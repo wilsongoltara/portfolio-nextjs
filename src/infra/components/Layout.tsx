@@ -1,12 +1,11 @@
 import Head from '@infra/components/Head';
-import { AppContext } from '@infra/context/AppContext';
 import { ChildrenProps } from '@interfaces/interfaceProps';
 import Footer from '@patterns/Footer';
 import NavBar from '@patterns/NavBar';
-import { useContext } from 'react';
+import { useAppContext } from '@infra/context/AppContext';
 
-export default function Layout({children}: ChildrenProps) {
-  const {nav} = useContext(AppContext);
+export default function Layout({ children }: Readonly<ChildrenProps>) {
+  const { nav } = useAppContext();
   
   return (
     <>

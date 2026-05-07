@@ -1,3 +1,5 @@
+'use client';
+
 import { ChildrenProps } from '@interfaces/interfaceProps';
 import { motion } from 'framer-motion';
 
